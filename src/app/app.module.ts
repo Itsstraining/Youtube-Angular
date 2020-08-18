@@ -15,7 +15,15 @@ import { TrendingCategoriesComponent } from './components/trending/trending-cate
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +37,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     VideoTrendingComponent,
     TrendingCategoriesComponent,
     SubcriptionsComponent,
-    LibraryComponent
+    LibraryComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
