@@ -15,6 +15,7 @@ import { TrendingCategoriesComponent } from './components/trending/trending-cate
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -29,13 +30,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     VideoTrendingComponent,
     TrendingCategoriesComponent,
     SubcriptionsComponent,
-    LibraryComponent
+    LibraryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
