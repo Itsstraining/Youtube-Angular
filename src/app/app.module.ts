@@ -23,6 +23,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +43,8 @@ import {MatButtonModule} from '@angular/material/button';
     VideoTrendingComponent,
     TrendingCategoriesComponent,
     SubcriptionsComponent,
-    LibraryComponent
+    LibraryComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -45,9 +53,15 @@ import {MatButtonModule} from '@angular/material/button';
     //Material
 
     MatTooltipModule,
-    MatIconModule,
-    MatButtonModule,
     
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
