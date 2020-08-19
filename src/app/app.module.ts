@@ -19,6 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 =======
+<<<<<<< HEAD
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+=======
 >>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
 
 //Material
@@ -26,6 +30,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
+>>>>>>> 5035b5f7c21f268aff3b872e887ff68cc6f19a86
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -55,12 +60,16 @@ import { AuthenticationService } from './services/authentication.service';
     TrendingCategoriesComponent,
     SubcriptionsComponent,
     LibraryComponent,
-
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
+    MatCardModule,
+    MatTabsModule,
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
     MatCardModule,
@@ -74,6 +83,7 @@ import { AuthenticationService } from './services/authentication.service';
 >>>>>>> d869e43737a5ec68038f6a49ca20211e4402e436
 
 >>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
+>>>>>>> 5035b5f7c21f268aff3b872e887ff68cc6f19a86
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     MatToolbarModule,
@@ -95,9 +105,12 @@ import { AuthenticationService } from './services/authentication.service';
   bootstrap: [AppComponent],
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   entryComponents: [LoginComponent]
 
 >>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
+>>>>>>> 5035b5f7c21f268aff3b872e887ff68cc6f19a86
 })
 export class AppModule {
 
