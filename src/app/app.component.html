@@ -1,8 +1,12 @@
-
-<app-nav-bar></app-nav-bar>
-<<<<<<< HEAD
+<app-nav-bar (changeState)="changeState($event)"></app-nav-bar>
+<mat-sidenav-container>
+  <mat-sidenav-content>
 <router-outlet></router-outlet>
 
-=======
-<router-outlet></router-outlet>
->>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
+  </mat-sidenav-content>
+
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">   
+ <app-side-bar></app-side-bar>
+  </mat-sidenav>
+</mat-sidenav-container>
+

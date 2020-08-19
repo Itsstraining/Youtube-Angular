@@ -33,9 +33,14 @@ import { environment } from '../environments/environment';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatDialogModule } from '@angular/material/dialog';
-import { FormsModule, ReactiveFormsModule,FormControl } from '@angular/forms';
+import { MatDialogModule, MatDialogRef, MatDialog } from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
+import { AuthenticationService } from './services/authentication.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +85,10 @@ import { MatTabsModule } from '@angular/material/tabs';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatSelectModule,
+    MatListModule
   ],
 
   providers: [],
@@ -90,4 +99,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 >>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
 })
-export class AppModule { }
+export class AppModule {
+
+
+}
