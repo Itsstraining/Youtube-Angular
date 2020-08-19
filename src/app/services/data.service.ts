@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
 import {Video} from '../models/video.model'
+import {} from'@angular/common/
+import { from } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  getItems(): any {
+    throw new Error("Method not implemented.");
+  }
 
   dataBase: Array<Video> = [{
     id: '1',

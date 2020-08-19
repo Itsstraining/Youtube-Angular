@@ -1,71 +1,77 @@
-<mat-card class="card">
-  <img mat-card-image
-    src="https://i.ytimg.com/vi/AUnypjWNa7Q/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAWaFXrBD5bIO5axPUWn3jyIUmMxQ"
-    alt="Photo of JB">
-  <mat-card-header>
-    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
-        src="//yt3.ggpht.com/a/AATXAJxHjpjDDyyzY6mYd5Z6EJzIvsYe-Y3ey1yCIMEMiQ=s88-c-k-c0xffffffff-no-nd-rj"></div>
-    <mat-card-title> <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
-        href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Justin Bieber - Changes (Nature Visual)</a></mat-card-title>
-  </mat-card-header>
-  <mat-card-subtitle>
-    <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
-      href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Justin Bieber</a>
-    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+<h3></h3>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+</div>
 
-      <span class="style-scope ytd-video-meta-block">5,6&nbsp;Tr lượt xem</span>
+<div class="a">
+  <mat-card class="card">
+    <img mat-card-image
+      src="https://i.ytimg.com/vi/AUnypjWNa7Q/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAWaFXrBD5bIO5axPUWn3jyIUmMxQ"
+      alt="Photo of JB">
+    <mat-card-header>
+      <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+          src="//yt3.ggpht.com/a/AATXAJxHjpjDDyyzY6mYd5Z6EJzIvsYe-Y3ey1yCIMEMiQ=s88-c-k-c0xffffffff-no-nd-rj"></div>
+      <mat-card-title> <a href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Justin Bieber - Changes (Nature
+          Visual)</a>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+      <a href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Justin Bieber</a>
+      <div id="metadata-line" class="style-scope ytd-video-meta-block">
 
-      <span class="style-scope ytd-video-meta-block">4 tháng trước</span>
-    </div>
+        <span class="style-scope ytd-video-meta-block">5,6&nbsp;Tr lượt xem</span>
+        <span class="style-scope ytd-video-meta-block">4 tháng trước</span>
+      </div>
 
-  </mat-card-subtitle>
+    </mat-card-subtitle>
 
-</mat-card>
+  </mat-card>
 
-<mat-card class="card">
-  <img mat-card-image
-    src="https://i.ytimg.com/vi/Bn0RfBPavFg/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDjRuOe8K2qNy0J382GEjLBDmmtJg"
-    alt="Photo of HP">
-  <mat-card-header>
-    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
-        src="https://yt3.ggpht.com/a-/AOh14GhEkImPnKaDkN15nJ66wM5JktBwi_jxvN5SkQ=s68-c-k-c0x00ffffff-no-rj-mo"></div>
-    <mat-card-title> <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
-        href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương Và Cô Học Trò May
-        Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời</a></mat-card-title>
-  </mat-card-header>
-  <mat-card-subtitle>
-    <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
-      href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Tuổi trẻ chưa trải sự đời</a>
-    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+  <mat-card class="card">
+    <img mat-card-image
+      src="https://i.ytimg.com/vi/Bn0RfBPavFg/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDjRuOe8K2qNy0J382GEjLBDmmtJg"
+      alt="Photo of HP">
+    <mat-card-header>
+      <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+          src="https://yt3.ggpht.com/a-/AOh14GhEkImPnKaDkN15nJ66wM5JktBwi_jxvN5SkQ=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+      <mat-card-title> <a href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương
+          Và Cô Học Trò May
+          Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời</a></mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+      <a href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Tuổi trẻ chưa trải sự đời</a>
+      <div id="metadata-line" class="style-scope ytd-video-meta-block">
 
-      <span class="style-scope ytd-video-meta-block">214.959&nbsp;Tr lượt xem</span>
+        <span class="style-scope ytd-video-meta-block">214.959&nbsp;Tr lượt xem</span>
 
-      <span class="style-scope ytd-video-meta-block">6 tháng trước</span>
-    </div>
-  </mat-card-subtitle>
+        <span class="style-scope ytd-video-meta-block">6 tháng trước</span>
+      </div>
+    </mat-card-subtitle>
 
-</mat-card>
+  </mat-card>
 
-<mat-card class="card">
-  <img mat-card-image
-    src="https://i.ytimg.com/vi/jDkFkyXhhus/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCAm1RiYpjIxKvTNQHbckA0qunUrg"
-    alt="Photo of baoroibeo">
-  <mat-card-header>
-    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
-        src="https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo"></div>
-    <mat-card-title> <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
-        href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">TRUNG YONE | TÚ ƠI! HÃY ĐỂ ANH BA CHO TÚ THẤY BEST YONE của
-        Ba Rọi Béo  </a></mat-card-title>
-  </mat-card-header>
-  <mat-card-subtitle>
-    <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
-      href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Ba rọi béo</a>
-    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+  <mat-card class="card">
+    <img mat-card-image
+      src="https://i.ytimg.com/vi/jDkFkyXhhus/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCAm1RiYpjIxKvTNQHbckA0qunUrg"
+      alt="Photo of baoroibeo">
+    <mat-card-header>
+      <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+          src="https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+      <mat-card-title> <a href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">TRUNG YONE | TÚ ƠI! HÃY ĐỂ ANH BA CHO TÚ
+          THẤY BEST YONE
+          của
+          Ba Rọi Béo </a></mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+      <a href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Ba rọi béo</a>
+      <div id="metadata-line" class="style-scope ytd-video-meta-block">
 
-      <span class="style-scope ytd-video-meta-block">3.632&nbsp;tỉ lượt xem</span>
+        <span class="style-scope ytd-video-meta-block">3.632&nbsp;tỉ lượt xem</span>
 
-      <span class="style-scope ytd-video-meta-block">10 phút và 56 giây trước</span>
-    </div>
-  </mat-card-subtitle>
+        <span class="style-scope ytd-video-meta-block">10 phút và 56 giây trước</span>
+      </div>
+    </mat-card-subtitle>
 
-</mat-card>
+  </mat-card>
+</div>

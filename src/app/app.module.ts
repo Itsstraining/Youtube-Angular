@@ -41,7 +41,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     TrendingCategoriesComponent,
     SubcriptionsComponent,
     LibraryComponent,
-
+    
   ],
   imports: [
     BrowserModule,
