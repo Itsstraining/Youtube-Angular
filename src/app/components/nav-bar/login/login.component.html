@@ -1,4 +1,16 @@
-    <!-- <div  *ngIf="authService.user != null"> -->
+<!-- <div *ngIf="authService.user != null"> -->
+<!-- <mat-tab-group mat-align-tabs="start" label="Login">Login -->
+<mat-tab-group mat-align-tabs="start">
+    <mat-form-field>
+        <mat-tab label="First">Content 1
+        <input formControlName="email" type="email" placeholder="Email">
+        <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
+            Email sai hoặc không có.</mat-error>
+        <input formControlName="password" type="password" placeholder="Password">
+        <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
+            Password không hợp lệ.</mat-error></mat-tab>
+    </mat-form-field>
+</mat-tab-group>
 
-
-        
+<input type="text">
+<!-- </mat-tab-group> -->

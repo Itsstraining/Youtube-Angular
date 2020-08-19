@@ -1,1 +1,6 @@
-<p>trending works!</p>
+<div class="categories">
+    <div class="categoriesMenu">
+        <app-trending-categories *ngFor="let item of dbButton" [dbButton]=" item">
+        </app-trending-categories>
+    </div>
+</div>
