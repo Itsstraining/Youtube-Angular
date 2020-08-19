@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-video-trending',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-trending.component.scss']
 })
 export class VideoTrendingComponent implements OnInit {
+
+ 
+
 
   constructor() { }
 
