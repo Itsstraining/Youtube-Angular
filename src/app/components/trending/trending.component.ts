@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {} from '../../models/video.model'
+
 @Component({
   templateUrl: './trending.component.html',
   styleUrls: ['./trending.component.scss']
@@ -12,18 +12,18 @@ export class TrendingComponent implements OnInit {
       title: 'Music'
     },
     {
-      icon: 'music_note',
+      icon: 'sports_esports',
       title: 'Game'
     },
 
     {
-      icon: 'music_note',
-      title: 'Music'
+      icon: 'fiber_new',
+      title: 'News'
     },
 
     {
-      icon: 'music_note',
-      title: 'Music'
+      icon: 'movie',
+      title: 'Movies'
     },
 
 
