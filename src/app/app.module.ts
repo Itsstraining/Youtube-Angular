@@ -15,12 +15,22 @@ import { TrendingCategoriesComponent } from './components/trending/trending-cate
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< HEAD
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+=======
+>>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
+
+//Material
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
+
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule, MatDialogRef, MatDialog } from '@angular/material/dialog';
@@ -51,6 +61,19 @@ import { AuthenticationService } from './services/authentication.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
+<<<<<<< HEAD
+    MatCardModule,
+    MatTabsModule,
+=======
+=======
+    //Material
+
+    MatTooltipModule,
+    
+>>>>>>> d869e43737a5ec68038f6a49ca20211e4402e436
+
+>>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     MatToolbarModule,
@@ -67,10 +90,14 @@ import { AuthenticationService } from './services/authentication.service';
     MatSelectModule,
     MatListModule
   ],
+
   providers: [],
   bootstrap: [AppComponent],
+<<<<<<< HEAD
+=======
   entryComponents: [LoginComponent]
 
+>>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
 })
 export class AppModule {
 

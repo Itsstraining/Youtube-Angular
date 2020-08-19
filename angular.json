@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "youtubeClone"
+    }
+  },
+  "defaultProject": "youtubeClone",
+  "cli": {
+    "analytics": "8889610a-fec1-4377-a08b-b93c43aaa980"
+  }
 }
