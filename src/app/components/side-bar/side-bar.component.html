@@ -1,1 +1,9 @@
-<p>side-bar works!</p>
+<div class='container'>
+  <mat-list-item *ngFor="let d of data">
+    <button mat-icon-button (click)="router(d.path)">
+      <mat-icon>{{ d.icon }}</mat-icon>
+      {{ d.desc }}
+    </button>
+  </mat-list-item>
+</div>
+
