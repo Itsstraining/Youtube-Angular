@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   templateUrl: './trending.component.html',
   styleUrls: ['./trending.component.scss']
 })
 export class TrendingComponent implements OnInit {
-
+ 
   dbButton: Array<any> = [
     {
       icon: 'music_note',
@@ -28,7 +29,14 @@ export class TrendingComponent implements OnInit {
 
 
   ]
+
+  
+  
+
   constructor() { }
+
+  
+ 
 
   ngOnInit(): void {
   }
