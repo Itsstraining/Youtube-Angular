@@ -15,6 +15,11 @@ import { TrendingCategoriesComponent } from './components/trending/trending-cate
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< HEAD
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+=======
+>>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
 
 //Material
 import {MatTooltipModule} from '@angular/material/tooltip';
@@ -51,11 +56,19 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+<<<<<<< HEAD
+<<<<<<< HEAD
+    MatCardModule,
+    MatTabsModule,
+=======
+=======
     //Material
 
     MatTooltipModule,
     
+>>>>>>> d869e43737a5ec68038f6a49ca20211e4402e436
 
+>>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     MatToolbarModule,
@@ -71,7 +84,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 
   providers: [],
   bootstrap: [AppComponent],
+<<<<<<< HEAD
+=======
   entryComponents: [LoginComponent]
 
+>>>>>>> 0f16afb16a6688394764cbaa15fef2306e8db5bc
 })
 export class AppModule { }
