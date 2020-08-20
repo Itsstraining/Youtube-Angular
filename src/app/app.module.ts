@@ -39,6 +39,7 @@ import { AuthenticationService } from './services/authentication.service';
 import {MatCardModule} from '@angular/material/card';
 import { SubcriptionsloginComponent } from './components/subcriptions/subcriptionslogin/subcriptionslogin.component';
 import { HistoryComponent } from './components/history/history.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { HistoryComponent } from './components/history/history.component';
     MatSidenavModule,
     MatSelectModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
   ],
 
   providers: [],
