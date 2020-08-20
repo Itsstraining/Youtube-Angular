@@ -127,10 +127,6 @@
   },
   "defaultProject": "youtubeClone",
   "cli": {
-<<<<<<< HEAD
-    "analytics": "8875c149-8d8f-476a-9d4f-08c4250ba5b1"
-=======
     "analytics": "8889610a-fec1-4377-a08b-b93c43aaa980"
->>>>>>> 5035b5f7c21f268aff3b872e887ff68cc6f19a86
   }
 }
