@@ -7,8 +7,15 @@
     background-size: cover;
   }
   .a {
-    display: flex;
-    justify-content: space-evenly;
-    
-  }
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    font-size: large;
+    justify-content: space-between;
+    word-break: break-word;
+    display:block;
+    align-items: center;
+    color: white;
+    margin-left: 5%;
+}
+  
   

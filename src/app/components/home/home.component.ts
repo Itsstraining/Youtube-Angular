@@ -14,40 +14,5 @@ export class HomeComponent implements OnInit {
     // throw new Error("Method not implemented.");
   }
 
-  listOfVideo:Array<Video> = [
-    {
-      id: "string",
-      name: "string",
-      author: "string",
-      url: "string",
-      pictureURL:"string",
-      view: 1,
-      like: 1,
-      dislike: 1,
-      details: "string"
-    },
-    {
-      id: "string",
-      name: "string",
-      author: "string",
-      url: "string",
-      pictureURL:"string",
-      view: 1,
-      like: 1,
-      dislike: 1,
-      details: "string"
-    },
-    {
-      id: "string",
-      name: "string",
-      author: "string",
-      url: "string",
-      pictureURL:"string",
-      view: 1,
-      like: 1,
-      dislike: 1,
-      details: "string"
-    }
-  ]
 
 }

@@ -15,8 +15,6 @@ import { TrendingCategoriesComponent } from './components/trending/trending-cate
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
 //Material
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
@@ -36,6 +34,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { AuthenticationService } from './services/authentication.service';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,7 +73,8 @@ import { AuthenticationService } from './services/authentication.service';
     MatMenuModule,
     MatSidenavModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
 
   providers: [],
