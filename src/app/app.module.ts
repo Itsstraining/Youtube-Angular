@@ -31,6 +31,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule,FormControl } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
+import { LibraryloginComponent } from './components/library/librarylogin/librarylogin.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +49,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     TrendingCategoriesComponent,
     SubcriptionsComponent,
     LibraryComponent,
+    LibraryloginComponent,
 
   ],
   imports: [
@@ -67,6 +72,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatSidenavModule,
+    MatGridListModule,
   ],
 
   providers: [],
