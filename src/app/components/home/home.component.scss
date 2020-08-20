@@ -6,13 +6,12 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
   }
-  .a {
+  .homepage {
     display: grid;
-    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: auto auto auto;
     font-size: large;
     justify-content: space-between;
     word-break: break-word;
-    display:block;
     align-items: center;
     color: white;
     margin-left: 5%;
