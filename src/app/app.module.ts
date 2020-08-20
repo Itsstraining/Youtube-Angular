@@ -15,11 +15,12 @@ import { TrendingCategoriesComponent } from './components/trending/trending-cate
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {LibraryloginComponent} from './components/library/librarylogin/librarylogin.component';
+
 //Material
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
@@ -35,6 +36,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { AuthenticationService } from './services/authentication.service';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { SubcriptionsloginComponent } from './components/subcriptions/subcriptionslogin/subcriptionslogin.component';
+import { HistoryComponent } from './components/history/history.component';
 
 @NgModule({
   declarations: [
@@ -50,14 +54,17 @@ import {MatCardModule} from '@angular/material/card';
     TrendingCategoriesComponent,
     SubcriptionsComponent,
     LibraryComponent,
-    
+    LibraryloginComponent,
+    SubcriptionsloginComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule,
+    
     //Material
+    MatTabsModule,
     MatTooltipModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
@@ -74,7 +81,8 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatSelectModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonToggleModule
   ],
 
   providers: [],
