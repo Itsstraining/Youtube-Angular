@@ -12,13 +12,13 @@ import { LoginComponent } from '../components/nav-bar/login/login.component';
 })
 export class AuthenticationService {
   user: firebase.User;
-
+  currentUser;
   // public isLoading :boolean;
 
   constructor(
     private auth: AngularFireAuth,
     private db: AngularFirestore,
-    public dialogRef: MatDialog
+    public dialogRef: MatDialog,
   ) { }
   public async login() {
     try {
@@ -46,16 +46,55 @@ export class AuthenticationService {
   }
 
 
-  // updateUserData({ uid, email, displayName, photoURL }: User) {
-  //   const userRef: AngularFirestoreDocument<User> = this.db.doc(`users/${uid}`);
-  //   const data = {
-  //     uid,
-  //     email,
-  //     displayName,
-  //     photoURL
-  //   };
-  //   return userRef.set(data, { merge: true });
-  // }
+  updateUserData({ uid, email, displayName, photoURL }: User) {
+    const userRef: AngularFirestoreDocument<User> = this.db.doc(`users/${uid}`);
+    const data = {
+      uid,
+      email,
+      displayName,
+      photoURL
+    };
+    return userRef.set(data, { merge: true });
+  }
+
+  public async loginWithEmailAndPassWord(userFormValue){
+    await this.auth.signInWithEmailAndPassword(userFormValue.email, userFormValue.password).then(() => {
+      this.dialogRef.closeAll();
+      this.user != null;
+      console.log(this.auth.user);
+    });
+    return this.auth.user.subscribe((usr) => {
+      this.currentUser = usr;
+      console.log(this.currentUser);
+    });
+    // return this.updateUserData(credetial.user).then(() => {
+    //   console.log('done');
+    // })
+    // .then(() =>{
+    //   this.dialogRef.closeAll();
+    //   this.user != null;
+    //   console.log('done');
+    // })
+    // .catch(err => {
+    // });
+  }
+
+    public async createWithEmailAndPassWord(userFormValue){
+      const credetial = await this.auth.createUserWithEmailAndPassword(userFormValue.email, userFormValue.password);
+      console.log(credetial.user);
+      return this.updateUserData(credetial.user)
+      .then(() => {
+        this.dialogRef.closeAll();
+        this.user != null;
+      })
+      .catch((err) =>{
+      });
+    }
+
+    onSubmit(value) {
+      this.loginWithEmailAndPassWord(value);
+    }
+  
 
 
 }
