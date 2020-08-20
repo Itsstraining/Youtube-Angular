@@ -1,41 +1,61 @@
 <mat-tab-group>
     <mat-tab label="Login">
-        
-            <form [formGroup]="userForm" (ngSubmit)="onSubmit()"
+        <div class='concu'>
+            <form [formGroup]="userForm"
                 style="width: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                
-                <input formControlName="email" type="email" placeholder="Email" style="margin-top: 2vh; width: 100%;">
+
+                <input formControlName="email" type="email" placeholder="Email" class="email">
                 <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
                     Email sai hoặc không có.</mat-error>
-                
 
-                <input formControlName="password" type="password" placeholder="Password"
-                    style="margin-top: 2vh; width: 100%;">
+                <input formControlName="password" type="password" placeholder="Password" class="email">
                 <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
                     Password không hợp lệ.</mat-error>
-        
-        </form>
-        <button style="margin-top: 2vh;">Login</button> <br>
-        <button *ngIf="authService.user == null " mat-icon-button class="example-icon favorite-icon" aria-label="Login"
-            (click)="authService.login()">
-            <a mat-raised-button target="_blank">Login With Google</a>
-        </button>
 
+            </form>
+
+
+            <div class="example-button-row">
+                <button mat-raised-button color="primary"
+                    (click)="authService.loginWithEmailAndPassWord(userForm.value)">Login</button>
+            </div>
+
+            <button *ngIf="authService.user == null " mat-icon-button class="example-icon favorite-icon"
+                aria-label="Login" (click)="authService.login()" style="position: relative;
+                right: 50px;">
+                
+                <a mat-raised-button target="_blank" style="background-color: gold;">
+                    <mat-icon>code</mat-icon>
+                    Login With Google</a>
+            </button>
+        </div>
     </mat-tab>
 
     <mat-tab label="Register">
-        <form [formGroup]="userForm" (ngSubmit)="onSubmit()"
-            style="width: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <input formControlName="email" type="email" placeholder="Email" style="margin-top: 2vh; width: 100%;">
-            <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
-                Email sai hoặc không có.</mat-error>
+        <div class='concu'>
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()"
+                style="width: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <input formControlName="email" type="email" placeholder="Email" class="email">
+                <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
+                    Email sai hoặc không có.</mat-error>
 
 
-            <input formControlName="password" type="password" placeholder="Password"
-                style="margin-top: 2vh; width: 100%;">
-            <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
-                Password không hợp lệ.</mat-error>
-        </form>
-        <button style="margin-top: 2vh;">Register</button>
+                <input formControlName="password" type="password" placeholder="Password" class="email">
+                <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
+                    Password không hợp lệ.</mat-error>
+            </form>
+            <div class="example-button-row">
+                <button mat-raised-button color="primary"
+                    (click)="authService.createWithEmailAndPassWord(userForm.value)">Register</button>
+            </div>
+            <button *ngIf="authService.user == null " mat-icon-button class="example-icon favorite-icon"
+                aria-label="Login" (click)="authService.login()" style="position: relative;
+                right: 50px;">
+                <a mat-raised-button target="_blank" style="background-color: gold;">
+                    <mat-icon>code</mat-icon>
+                    Login With Google</a>
+            </button>
+        </div>
     </mat-tab>
+
 </mat-tab-group>
