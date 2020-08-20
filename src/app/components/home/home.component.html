@@ -1,25 +1,22 @@
 <h3></h3>
 
 <mat-card class="card" *ngFor="let video of this.listOfVideo">
-  <img mat-card-image
-  [src]='video.pictureURL'
-    alt="Photo of JB">
-  <mat-card-header>
-    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
-        [src]="video.pictureURL"></div>
-    <mat-card-title> <a [href]="video.url" dir="auto">{{video.name}}</a>
-    </mat-card-title>
-  </mat-card-header>
-  <mat-card-subtitle>
-    <a [href]="video.url" dir="auto" dir="auto">{{video.name}}</a>
-    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+    <img mat-card-image [src]='video.pictureURL' alt="Photo of JB">
+    <mat-card-header>
+        <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;" [src]="video.pictureURL"></div>
+        <mat-card-title> <a [href]="video.url" dir="auto">{{video.name}}</a>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+        <a [href]="video.url" dir="auto" dir="auto">{{video.name}}</a>
+        <div id="metadata-line" class="style-scope ytd-video-meta-block">
 
-      <span class="style-scope ytd-video-meta-block">7&nbsp;Tr lượt xem</span>
-      <span class="style-scope ytd-video-meta-block">{{video.like}}</span>
-      <span class="style-scope ytd-video-meta-block">4 tháng trước</span>
-    </div>
+            <span class="style-scope ytd-video-meta-block">7&nbsp;Tr lượt xem</span>
+            <span class="style-scope ytd-video-meta-block">{{video.like}}</span>
+            <span class="style-scope ytd-video-meta-block">4 tháng trước</span>
+        </div>
 
-  </mat-card-subtitle>
+    </mat-card-subtitle>
 
 </mat-card>
 

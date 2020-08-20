@@ -16,18 +16,11 @@ import { SubcriptionsComponent } from './components/subcriptions/subcriptions.co
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatCardModule} from '@angular/material/card';
-
-
-
-
-
 
 //Material
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -63,18 +56,9 @@ import { AuthenticationService } from './services/authentication.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
-    MatCardModule,
-    MatTabsModule,
-
-
-    MatCardModule,
     MatTabsModule,
     //Material
-
     MatTooltipModule,
-    
-
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     MatToolbarModule,
@@ -94,10 +78,7 @@ import { AuthenticationService } from './services/authentication.service';
 
   providers: [],
   bootstrap: [AppComponent],
-
   entryComponents: [LoginComponent]
-
-
 })
 export class AppModule {
 
