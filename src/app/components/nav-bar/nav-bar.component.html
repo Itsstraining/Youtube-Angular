@@ -8,51 +8,74 @@
     <span>YoutubeClone</span>
     <span class="example-spacer"></span>
 
-    
-
 
 
     <form class="searchBox">
-        <input matInput style="box-sizing: border-box;
-        width: 50%;
-        height: 30px;
-        color: var(--yt-searchbox-text-color);
-        box-shadow: inset 0 1px 2px #f5f5f5;
-        border: 5px solid #bdbdbd;" placeholder="Search">
-        <button>
-            <mat-icon>search</mat-icon>
-        </button>
+        <div class="example-button-row">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Search">
+            </mat-form-field>
+            <button mat-button>
+                <mat-icon>search</mat-icon>
+            </button>
+        </div>
     </form>
 
-    
-    <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="video_call">video_call</mat-icon>
-    <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="view_comfy">view_comfy</mat-icon>
-    <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="notifications_none">notifications_none</mat-icon>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="video_call">video_call</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>live_tv</mat-icon>
+            <span>Upload Video</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>rss_feed</mat-icon>
+            <span>Live</span>
+        </button>
+    </mat-menu>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="menu123" aria-label="Example icon-button with a menu">
+        <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="view_comfy">view_comfy</mat-icon>
+    </button>
+    <mat-menu #menu123="matMenu">
+        <button mat-menu-item>
+            <mat-icon>comment</mat-icon>
+            <span>Comment</span>
+        </button>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu123456" aria-label="Example icon-button with a menu">
+        <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="notifications_none">notifications_none
+        </mat-icon>
+    </button>
+    <mat-menu #menu123456="matMenu">
+        <button mat-menu-item>
+            <mat-icon>verified</mat-icon>
+            <span>Admin</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>shop</mat-icon>
+            <span>Notification</span>
+        </button>
+    </mat-menu>
 
 
 
-    <img *ngIf="authService.user != null" src="{{authService.user.photoURL}}" style="width: 50px; height: 50x; border-radius: 50%;">
+    <img *ngIf="authService.user != null " src="{{authService.user.photoURL}}"
+        style="width: 50px; height: 50x; border-radius: 50%;">
     <h5 *ngIf="authService.user != null" style="font-size: medium;"> {{authService.user.displayName}} </h5>
 
-    
+
     <div *ngIf="authService.user == null">
         <button mat-button (click)="openDialog()">Login</button>
-        <!-- <button  mat-icon-button class="example-icon favorite-icon" aria-label="Login"
-        (click)="authService.login()"> -->
-        <!-- <a mat-raised-button target="_blank">Log in</a> -->
-        <!-- </button> -->
     </div>
-
-    <div  *ngIf="authService.user != null">
+    <div *ngIf="authService.user != null">
 
         <button mat-button (click)="authService.signout()">
             Log out
         </button>
     </div>
-
-    <!-- <button *ngIf="authService.user != null" mat-icon-button class="example-icon" aria-label="Sign out"
-        (click)="authService.signout()">
-        <a mat-raised-button target="_blank">Log out</a>
-    </button> -->
-
 </mat-toolbar>
