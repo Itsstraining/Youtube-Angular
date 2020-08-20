@@ -1,28 +1,56 @@
 <mat-toolbar color="primary" class="container">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+
+    <button mat-icon-button class="example-icon" (click)="changeEvent()">
         <mat-icon>menu</mat-icon>
     </button>
-    <span>Ten San Pham</span>
+
+
+    <span>YoutubeClone</span>
     <span class="example-spacer"></span>
-    <h5 *ngIf="authService.user != null"> {{authService.user.displayName}} </h5>
+
+    
+
+
 
     <form class="searchBox">
-        <input matInput placeholder="Search">
+        <input matInput style="box-sizing: border-box;
+        width: 50%;
+        height: 30px;
+        color: var(--yt-searchbox-text-color);
+        box-shadow: inset 0 1px 2px #f5f5f5;
+        border: 5px solid #bdbdbd;" placeholder="Search">
+        <button>
+            <mat-icon>search</mat-icon>
+        </button>
     </form>
-  
-    <mat-icon aria-hidden="false" aria-label="video_call">video_call</mat-icon>
-    <mat-icon aria-hidden="false" aria-label="view_comfy">view_comfy</mat-icon>
-    <mat-icon aria-hidden="false" aria-label="notifications_none">notifications_none</mat-icon>
+
+    
+    <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="video_call">video_call</mat-icon>
+    <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="view_comfy">view_comfy</mat-icon>
+    <mat-icon style=" margin-right: 40px;" aria-hidden="false" aria-label="notifications_none">notifications_none</mat-icon>
 
 
 
+    <img *ngIf="authService.user != null" src="{{authService.user.photoURL}}" style="width: 50px; height: 50x; border-radius: 50%;">
+    <h5 *ngIf="authService.user != null" style="font-size: medium;"> {{authService.user.displayName}} </h5>
 
-    <button mat-button (click)="openDialog()">Login</button>
-    <!-- <button *ngIf="authService.user == null " mat-icon-button class="example-icon favorite-icon" aria-label="Login"
-        (click)="authService.login()">
-        <a mat-raised-button target="_blank">Log in</a>
-    </button>
-    <button *ngIf="authService.user != null" mat-icon-button class="example-icon" aria-label="Sign out"
+    
+    <div *ngIf="authService.user == null">
+        <button mat-button (click)="openDialog()">Login</button>
+        <!-- <button  mat-icon-button class="example-icon favorite-icon" aria-label="Login"
+        (click)="authService.login()"> -->
+        <!-- <a mat-raised-button target="_blank">Log in</a> -->
+        <!-- </button> -->
+    </div>
+
+    <div  *ngIf="authService.user != null">
+
+        <button mat-button (click)="authService.signout()">
+            Log out
+        </button>
+    </div>
+
+    <!-- <button *ngIf="authService.user != null" mat-icon-button class="example-icon" aria-label="Sign out"
         (click)="authService.signout()">
         <a mat-raised-button target="_blank">Log out</a>
     </button> -->

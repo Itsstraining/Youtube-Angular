@@ -1,25 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../../services/authentication.service';
-import { MatDialog } from '@angular/material/dialog';
+import { AngularFireAuth } from '@angular/fire/auth';
+
 import {
   FormControl,
   FormGroup,
   Validators,
   FormBuilder
 } from '@angular/forms'
-import { AngularFireAuth } from '@angular/fire/auth';
+import { MatDialogRef } from '@angular/material/dialog';
+import { auth } from 'firebase';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+
   userForm: FormGroup;
 
-  constructor(public authService: AuthenticationService,
+  constructor(
+    public authService: AuthenticationService,
     private afAuth: AngularFireAuth,
-    // private dialogRef: MatDialog<LoginComponent>,
-    private fb: FormBuilder) { }
+    private fb: FormBuilder,
+    public dialogRef: MatDialogRef<LoginComponent>) {
+
+  }
+
 
   ngOnInit(): void {
     this.userForm = this.fb.group({
@@ -27,5 +36,21 @@ export class LoginComponent implements OnInit {
       password: new FormControl('', Validators.minLength(6))
     });
   }
+
+  onSubmit(){
+
+  }
+
+  // closeDialog(){
+  //   this.dialogRef.close();
+  // }
+  // public async LoginGoogle(){
+  //   const provider = new auth.GoogleAuthProvider();
+  //   const credetial = await this.afAuth.signInWithPopup(provider);
+  //   return this.authService.updateUserData(credetial.user)
+  //   .then(() => {
+  //       this.dialogRef.close();
+  //   })
+  // }
 
 }

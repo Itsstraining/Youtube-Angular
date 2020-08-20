@@ -16,11 +16,11 @@ import { SubcriptionsComponent } from './components/subcriptions/subcriptions.co
 import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 //Material
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -28,12 +28,15 @@ import { environment } from '../environments/environment';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatDialogModule } from '@angular/material/dialog';
-import { FormsModule, ReactiveFormsModule,FormControl } from '@angular/forms';
+import { MatDialogModule, MatDialogRef, MatDialog } from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
-import { LibraryloginComponent } from './components/library/librarylogin/librarylogin.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
+import { AuthenticationService } from './services/authentication.service';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -49,18 +52,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
     TrendingCategoriesComponent,
     SubcriptionsComponent,
     LibraryComponent,
-    LibraryloginComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatTabsModule,
     //Material
-
     MatTooltipModule,
-    
-
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     MatToolbarModule,
@@ -72,13 +71,18 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatMenuModule,
     MatSidenavModule,
-    MatGridListModule,
+    MatSelectModule,
+    MatListModule,
+    MatCardModule
   ],
 
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent]
-
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

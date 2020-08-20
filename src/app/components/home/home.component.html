@@ -1,1 +1,358 @@
-<p>home works!</p>
+<h3></h3>
+
+<mat-card class="card" *ngFor="let video of this.listOfVideo">
+    <img mat-card-image [src]='video.pictureURL' alt="Photo of JB">
+    <mat-card-header>
+        <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;" [src]="video.pictureURL"></div>
+        <mat-card-title> <a [href]="video.url" dir="auto">{{video.name}}</a>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+        <a [href]="video.url" dir="auto" dir="auto">{{video.name}}</a>
+        <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+            <span class="style-scope ytd-video-meta-block">7&nbsp;Tr lượt xem</span>
+            <span class="style-scope ytd-video-meta-block">{{video.like}}</span>
+            <span class="style-scope ytd-video-meta-block">4 tháng trước</span>
+        </div>
+
+    </mat-card-subtitle>
+
+</mat-card>
+
+<!-- <mat-card class="card">
+<mat-card class="card">
+  <img mat-card-image
+    src="https://i.ytimg.com/vi/Bn0RfBPavFg/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDjRuOe8K2qNy0J382GEjLBDmmtJg"
+    alt="Photo of HP">
+  <mat-card-header>
+    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+        src="https://yt3.ggpht.com/a-/AOh14GhEkImPnKaDkN15nJ66wM5JktBwi_jxvN5SkQ=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+    <mat-card-title> <a href="https://www.youtube.com/watch?v=Bn0RfBPavFgQ" dir="auto">TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương
+        Và Cô Học Trò May
+        Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời</a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a href="https://www.youtube.com/watch?v=Bn0RfBPavFg" dir="auto">Tuổi trẻ chưa trải sự đời</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">6&nbsp;Tr lượt xem</span>
+    <mat-card-title> <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
+        href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương Và Cô Học Trò May
+        Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời</a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
+      href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Tuổi trẻ chưa trải sự đời</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">214.959&nbsp;Tr lượt xem</span>
+
+      <span class="style-scope ytd-video-meta-block">6 tháng trước</span>
+    </div>
+  </mat-card-subtitle>
+
+</mat-card>
+
+<mat-card class="card">
+  <img mat-card-image
+    src="https://i.ytimg.com/vi/jDkFkyXhhus/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCAm1RiYpjIxKvTNQHbckA0qunUrg"
+    alt="Photo of baoroibeo">
+  <mat-card-header>
+    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+        src="https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+    <mat-card-title> <a href="https://www.youtube.com/watch?v=jDkFkyXhhus&t=272s" dir="auto">TRUNG YONE | TÚ ƠI! HÃY ĐỂ ANH BA CHO TÚ
+        THẤY BEST YONE
+        của
+        Ba Rọi Béo </a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a href="https://www.youtube.com/watch?v=jDkFkyXhhus&t=272s" dir="auto">Ba rọi béo</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">5&nbsp;tỉ lượt xem</span>
+    <mat-card-title> <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
+        href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">TRUNG YONE | TÚ ƠI! HÃY ĐỂ ANH BA CHO TÚ THẤY BEST YONE của
+        Ba Rọi Béo  </a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a class="yt-simple-endpoint style-scope yt-formatted-string" spellcheck="false"
+      href="/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" dir="auto">Ba rọi béo</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">3.632&nbsp;tỉ lượt xem</span>
+
+      <span class="style-scope ytd-video-meta-block">10 phút và 56 giây trước</span>
+    </div>
+  </mat-card-subtitle>
+
+</mat-card>
+
+<mat-card class="card">
+  <img mat-card-image
+    src="https://i.ytimg.com/vi/qNQmb80CS9o/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAADKMxi0YrMrFygzO19myc0VoVQA"
+    alt="Photo of tyler">
+  <mat-card-header>
+    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+        src="https://yt3.ggpht.com/a-/AOh14Gg18zd2--TrIwyjcCh5vmZP1Qq5mVrIhLrCJw=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+    <mat-card-title> <a href="https://www.youtube.com/watch?v=qNQmb80CS9o&t=49s" dir="auto">Chuyện Bên Lề 75: Anh Bradley Ở Cali Qua
+        Thăm Anh Đức </a></mat-card-title>
+
+
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a href="https://www.youtube.com/watch?v=qNQmb80CS9o&t=49s" dir="auto">Tyler Ngô - Mê Xe Hơn Mấy Cô</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">4&nbsp;tỉ lượt xem</span>
+
+      <span class="style-scope ytd-video-meta-block">10 phút và 56 giây trước</span>
+    </div>
+  </mat-card-subtitle>
+
+</mat-card>
+
+<mat-card class="card">
+  <img mat-card-image
+    src="https://i.ytimg.com/vi/HEZSdFf03CY/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAty1KTuLlkeLR1lt2rt7OHFkWcMA"
+    alt="Photo of pc">
+  <mat-card-header>
+    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+        src="https://yt3.ggpht.com/a-/AOh14Gh-mQwzkfHR2kksbXouEZrQIyT9dnzlyDrwzQ=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+    <mat-card-title> <a href="https://www.youtube.com/watch?v=HEZSdFf03CY&t=144s" dir="auto"> Tin tức Covid-19 mới nhất | Tình hình dịch
+        corona hôm nay 19/8 | Dịch covid hôm nay tại Việt Nam
+        của TIN TỨC 24H ONLINE </a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a href="https://www.youtube.com/watch?v=HEZSdFf03CY&t=144s" dir="auto">TIN TỨC 24H ONLINE</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">3.992&nbsp; lượt xem</span>
+
+      <span class="style-scope ytd-video-meta-block">19 phút và 56 giây trước</span>
+    </div>
+  </mat-card-subtitle>
+
+</mat-card>
+
+<mat-card class="card">
+  <img mat-card-image
+    src="https://i.ytimg.com/vi/Hywo2vnQLOY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDoXoub_2sztgGzoAQ4eb-JHQG_BQ"
+    alt="Photo of do">
+  <mat-card-header>
+    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+        src="https://yt3.ggpht.com/a-/AOh14GjjSkfEtGkyqFF79Y5aSoY1H8DAV0CunbWFkw=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+    <mat-card-title> <a href="https://www.youtube.com/watch?v=Hywo2vnQLOY&t=9s" dir="auto"> MixiVLOG#17: Nhà mới, cuộc sống mới của gia
+        đình Độ Mixi </a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a href="https://www.youtube.com/watch?v=Hywo2vnQLOY&t=9s" dir="auto">MixiGaming</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+      <span class="style-scope ytd-video-meta-block">3.635&nbsp; tr lượt xem</span>
+
+      <span class="style-scope ytd-video-meta-block">5 tieng trước</span>
+    </div>
+  </mat-card-subtitle>
+
+</mat-card>
+
+<mat-card class="card">
+<img mat-card-image
+  src="https://i.ytimg.com/vi/HrUqRiDu3YM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAXGJ7jUggjY0sqiFQ2wjqOBycO8A"
+  alt="Photo of do">
+<mat-card-header>
+  <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+      src="https://yt3.ggpht.com/a-/AOh14GgUmcQo0jiRGLwjvp9LadtMpWPFLYvS5v7x=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+  <mat-card-title> <a href="https://www.youtube.com/watch?v=HrUqRiDu3YM" dir="auto"> Dẫn BÌNH GOLD đi "Lái Máy Bay" & GIVEAWAY Độc
+      Nhất cho Fan nhaTO ở BAR LỚN NHẤT TP. Vinh
+    </a></mat-card-title>
+</mat-card-header>
+<mat-card-subtitle>
+  <a href="https://www.youtube.com/watch?v=HrUqRiDu3YM" dir="auto">nhaTO Official</a>
+  <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+    <span class="style-scope ytd-video-meta-block">3.632&nbsp;  lượt xem</span>
+
+    <span class="style-scope ytd-video-meta-block">7 tieng trước</span>
+  </div>
+</mat-card-subtitle>
+
+</mat-card>
+
+<mat-card class="card">
+  <img mat-card-image
+    src="https://i.ytimg.com/vi/PR_yVho1Txc/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC13ldTHksM7zdTYRSkV8sEYG-EAQ"
+    alt="Photo of phuong ly">
+  <mat-card-header>
+    <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+        src="https://yt3.ggpht.com/a/AATXAJyfiffmij_oqGnm-HKNY8L-cR4pMTOlgD3grTmlbA=s88-c-k-c0x00ffffff-no-rj"></div>
+    <mat-card-title> <a href="https://www.youtube.com/watch?v=PR_yVho1Txc" dir="auto"> MISSING YOU - PHƯƠNG LY x TINLE (Official MV)
+      </a></mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>
+    <a href="https://www.youtube.com/watch?v=PR_yVho1Txc" dir="auto">Phuong Ly Official</a>
+    <div id="metadata-line" class="style-scope ytd-video-meta-block">
+  
+      <span class="style-scope ytd-video-meta-block">9999992&nbsp;Tỉ lượt xem</span>
+  
+      <span class="style-scope ytd-video-meta-block">9 tieng trước</span>
+    </div>
+  </mat-card-subtitle>
+  
+  </mat-card>
+
+  <mat-card class="card">
+    <img mat-card-image
+      src="https://i.ytimg.com/vi/R2dt6h4fj3U/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDtUAwpspIu7IJ5FWds6rtouJw5jA"
+      alt="Photo of nhims">
+    <mat-card-header>
+      <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+          src="https://yt3.ggpht.com/a-/AOh14GgDCVmIFWu7X8M48zBNPQNysSiPi_yaLkNR0w=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+      <mat-card-title> <a href="https://www.youtube.com/watch?v=R2dt6h4fj3U" dir="auto"> NHISM PHÁ ĐẢO FALL GUYS VÀ TÂM SỰ VỀ CÂU CHUYỆN ĐƯỢC BỐ MẸ NHẶT VỀ NUÔI Ở BÃI RÁC 
+        </a></mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+      <a href="https://www.youtube.com/watch?v=R2dt6h4fj3U" dir="auto"> NHISM FALL GUYS</a>
+      <div id="metadata-line" class="style-scope ytd-video-meta-block">
+    
+        <span class="style-scope ytd-video-meta-block">92&nbsp; lượt xem</span>
+    
+        <span class="style-scope ytd-video-meta-block">9 tieng trước</span>
+      </div>
+    </mat-card-subtitle>
+    
+    </mat-card>
+
+    <mat-card class="card">
+      <img mat-card-image
+        src="https://i.ytimg.com/vi/cmKvNPlRH6U/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCHncy7pqB99vhO9nOqmeDXPz5yEg"
+        alt="Photo of locoboi">
+      <mat-card-header>
+        <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+            src="https://yt3.ggpht.com/a-/AOh14Gg3nq-bDujEhOHvAk8m6yqeVcbodhtzymr4Yw=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+        <mat-card-title> <a href="https://www.youtube.com/watch?v=cmKvNPlRH6U" dir="auto">3 ĐIỀU ĐỨC DẠY BẢO [REP B RAY] - CHOI 
+          </a></mat-card-title>
+      </mat-card-header>
+      <mat-card-subtitle>
+        <a href="https://www.youtube.com/watch?v=cmKvNPlRH6U" dir="auto"> LOCOBoiz Official</a>
+        <div id="metadata-line" class="style-scope ytd-video-meta-block">
+      
+          <span class="style-scope ytd-video-meta-block">1&nbsp; lượt xem</span>
+      
+          <span class="style-scope ytd-video-meta-block">78 tieng trước</span>
+        </div>
+      </mat-card-subtitle>
+      
+      </mat-card>
+
+      
+    <mat-card class="card">
+      <img mat-card-image
+        src="https://i.ytimg.com/vi/envZTYdG7C0/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA8ZwbHCCmo16wuqT0UWGnv2k0_xA"
+        alt="Photo of sela">
+      <mat-card-header>
+        <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+            src="https://yt3.ggpht.com/a/AATXAJyAWuiBwgazCsw5YdI7P5Sfgg3bufc3Ms4xse3m=s88-c-k-c0xffffffff-no-rj-mo"></div>
+        <mat-card-title> <a href="https://www.youtube.com/watch?v=envZTYdG7C0" dir="auto">CHUBBY REACTION GIÁO ÁN TRỐN VỢ REVIEW GÁI CỦA SENA 
+          </a></mat-card-title>
+      </mat-card-header>
+      <mat-card-subtitle>
+        <a href="https://www.youtube.com/watch?v=envZTYdG7C0" dir="auto"> Sena </a>
+        <div id="metadata-line" class="style-scope ytd-video-meta-block">
+      
+          <span class="style-scope ytd-video-meta-block">1&nbsp; lượt xem</span>
+      
+          <span class="style-scope ytd-video-meta-block">1 tháng trước</span>
+        </div>
+      </mat-card-subtitle>
+      
+      </mat-card>
+
+      <mat-card class="card">
+        <img mat-card-image
+          src="https://i.ytimg.com/vi/O3VPtGu4-Bk/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBdBvxBjYX5b-HyUzW9_H17LXQOlg"
+          alt="Photo of ba roi beo">
+        <mat-card-header>
+          <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+              src="https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+          <mat-card-title> <a href="https://www.youtube.com/watch?v=O3VPtGu4-Bk" dir="auto">THẦY BA KHUYÊN MỌI NGƯỜI KHÔNG NÊN XEM...HẠI MẮT LẮM
+            </a></mat-card-title>
+        </mat-card-header>
+        <mat-card-subtitle>
+          <a href="https://www.youtube.com/watch?v=O3VPtGu4-Bk" dir="auto"> Ba Rọi Béo </a>
+          <div id="metadata-line" class="style-scope ytd-video-meta-block">
+        
+            <span class="style-scope ytd-video-meta-block">65&nbsp; lượt xem</span>
+        
+            <span class="style-scope ytd-video-meta-block">1 ngày trước</span>
+          </div>
+        </mat-card-subtitle>
+        
+        </mat-card>
+
+        <mat-card class="card">
+          <img mat-card-image
+            src="https://i.ytimg.com/vi/-5d7AqSKOuA/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD4DIoXSjuZlUy21hxlkQfh7nUk7g"
+            alt="Photo of giang ho vui">
+          <mat-card-header>
+            <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+                src="https://yt3.ggpht.com/a-/AOh14GghFi4ZPx7yZj-1htSaVPuVMgal7L-zRKgSLw=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+            <mat-card-title> <a href="https://www.youtube.com/watch?v=-5d7AqSKOuA" dir="auto">BabyRed Livestream part 4 Lớp học
+              </a></mat-card-title>
+          </mat-card-header>
+          <mat-card-subtitle>
+            <a href="https://www.youtube.com/watch?v=-5d7AqSKOuA" dir="auto"> BabyRed </a>
+            <div id="metadata-line" class="style-scope ytd-video-meta-block">
+          
+              <span class="style-scope ytd-video-meta-block">9&nbsp; lượt xem</span>
+          
+              <span class="style-scope ytd-video-meta-block">9 ngày trước</span>
+            </div>
+          </mat-card-subtitle>
+          
+          </mat-card>
+
+          <mat-card class="card">
+            <img mat-card-image
+              src="https://i.ytimg.com/vi/-bqC2H8100c/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDQyWRJ5SxISNZ4rjrv4cxPnSGKEg"
+              alt="Photo of Game">
+            <mat-card-header>
+              <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+                  src="https://yt3.ggpht.com/a-/AOh14GgbZQq27EXgAEvvuNwf6Q1aiJgH9EHi2eQq0w=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+              <mat-card-title> <a href="https://www.youtube.com/watch?v=0KXQ9eQxnuU" dir="auto">Justin Bieber - Cold Water in the Live Lounge
+                </a></mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>
+              <a href="https://www.youtube.com/watch?v=0KXQ9eQxnuU" dir="auto"> BBCRadio1VEVO </a>
+              <div id="metadata-line" class="style-scope ytd-video-meta-block">
+            
+                <span class="style-scope ytd-video-meta-block">79nbsp; lượt xem</span>
+            
+                <span class="style-scope ytd-video-meta-block">79 ngày trước</span>
+              </div>
+            </mat-card-subtitle>
+            
+            </mat-card>
+
+            <mat-card class="card">
+              <img mat-card-image
+                src="https://i.ytimg.com/vi/goQUV0jW8b4/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAxrolSXT7umKaajPTKEh_PjXDpkg"
+                alt="Photo of Bình gold">
+              <mat-card-header>
+                <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;"
+                    src="https://yt3.ggpht.com/a-/AOh14Gir3Gk8iElChTeygkniVjA82AzmuvIBENa5rA=s68-c-k-c0x00ffffff-no-rj-mo"></div>
+                <mat-card-title> <a href="https://www.youtube.com/watch?v=goQUV0jW8b4" dir="auto">QUAN HỆ RỘNG - BÌNH GOLD OFFICIAL MP3
+                  </a></mat-card-title>
+              </mat-card-header>
+              <mat-card-subtitle>
+                <a href="https://www.youtube.com/watch?v=goQUV0jW8b4" dir="auto"> Bình Gold </a>
+                <div id="metadata-line" class="style-scope ytd-video-meta-block">
+              
+                  <span class="style-scope ytd-video-meta-block">79nbsp; lượt xem</span>
+              
+                  <span class="style-scope ytd-video-meta-block">79 ngày trước</span>
+                </div>
+              </mat-card-subtitle>
+              
+              </mat-card> -->

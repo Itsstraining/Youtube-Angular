@@ -1,3 +1,11 @@
-
-<app-nav-bar></app-nav-bar>
+<app-nav-bar (changeState)="changeState($event)"></app-nav-bar>
+<mat-sidenav-container>
+  <mat-sidenav-content>
 <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">   
+ <app-side-bar></app-side-bar>
+  </mat-sidenav>
+</mat-sidenav-container>

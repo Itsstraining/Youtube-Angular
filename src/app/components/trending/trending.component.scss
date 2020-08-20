@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border: 50%;
+    padding-left: 5%;
 }
 
 .categoriesMenu {
@@ -11,5 +11,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
+    width: 45%;
+}
+
+::ng-deep .mat-icon {
+    height: 44px !important;
+    width: 44px !important;
+    font-size: 44px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }

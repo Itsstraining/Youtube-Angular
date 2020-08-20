@@ -3,6 +3,7 @@ export interface Video {
     name: string;
     author: string;
     url: string;
+    pictureURL:string
     view: number;
     like: number;
     dislike: number;
