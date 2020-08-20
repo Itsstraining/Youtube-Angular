@@ -17,7 +17,6 @@ import { LibraryComponent } from './components/library/library.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatCardModule} from '@angular/material/card';
-import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -36,9 +35,14 @@ import { environment } from '../environments/environment';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatDialogModule } from '@angular/material/dialog';
-import { FormsModule, ReactiveFormsModule,FormControl } from '@angular/forms';
-
+import { MatDialogModule, MatDialogRef, MatDialog } from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
+import { AuthenticationService } from './services/authentication.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,6 +86,10 @@ import { FormsModule, ReactiveFormsModule,FormControl } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatSelectModule,
+    MatListModule
   ],
 
   providers: [],
@@ -91,4 +99,7 @@ import { FormsModule, ReactiveFormsModule,FormControl } from '@angular/forms';
 
 
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

@@ -1,16 +1,41 @@
-<!-- <div *ngIf="authService.user != null"> -->
-<!-- <mat-tab-group mat-align-tabs="start" label="Login">Login -->
-<mat-tab-group mat-align-tabs="start">
-    <mat-form-field>
-        <mat-tab label="First">Content 1
-        <input formControlName="email" type="email" placeholder="Email">
-        <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
-            Email sai hoặc không có.</mat-error>
-        <input formControlName="password" type="password" placeholder="Password">
-        <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
-            Password không hợp lệ.</mat-error></mat-tab>
-    </mat-form-field>
-</mat-tab-group>
+<mat-tab-group>
+    <mat-tab label="Login">
+        
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()"
+                style="width: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                
+                <input formControlName="email" type="email" placeholder="Email" style="margin-top: 2vh; width: 100%;">
+                <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
+                    Email sai hoặc không có.</mat-error>
+                
 
-<input type="text">
-<!-- </mat-tab-group> -->
+                <input formControlName="password" type="password" placeholder="Password"
+                    style="margin-top: 2vh; width: 100%;">
+                <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
+                    Password không hợp lệ.</mat-error>
+        
+        </form>
+        <button style="margin-top: 2vh;">Login</button> <br>
+        <button *ngIf="authService.user == null " mat-icon-button class="example-icon favorite-icon" aria-label="Login"
+            (click)="authService.login()">
+            <a mat-raised-button target="_blank">Login With Google</a>
+        </button>
+
+    </mat-tab>
+
+    <mat-tab label="Register">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()"
+            style="width: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <input formControlName="email" type="email" placeholder="Email" style="margin-top: 2vh; width: 100%;">
+            <mat-error *ngIf="!userForm.controls['email'].valid && userForm.controls['email'].dirty">
+                Email sai hoặc không có.</mat-error>
+
+
+            <input formControlName="password" type="password" placeholder="Password"
+                style="margin-top: 2vh; width: 100%;">
+            <mat-error *ngIf="!userForm.controls['password'].valid && userForm.controls['password'].dirty">
+                Password không hợp lệ.</mat-error>
+        </form>
+        <button style="margin-top: 2vh;">Register</button>
+    </mat-tab>
+</mat-tab-group>
