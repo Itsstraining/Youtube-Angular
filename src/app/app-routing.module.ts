@@ -15,11 +15,11 @@ const routes: Routes = [
     path: 'home', component: HomeComponent,
   },
   {
-    path:'library' , component: LibraryComponent, 
+    path: 'library' , component: LibraryComponent,
 
   },
   {
-    path:'librarylogin', component: LibraryloginComponent,
+    path: 'librarylogin', component: LibraryloginComponent,
   },
   {
     path: 'subcriptions', component: SubcriptionsComponent,
@@ -31,7 +31,7 @@ const routes: Routes = [
     path: 'history' , component: HistoryComponent,
   },
   {
-  path:'trending',component:TrendingComponent,
+  path: 'trending', component: TrendingComponent,
   children: [
     {
       path: ':video-trending',
