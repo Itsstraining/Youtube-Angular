@@ -9,14 +9,11 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
   {
     path: 'home', component: HomeComponent,
-  }
-
   },
   {
     path:'library' , component: LibraryComponent, 
 
   },
-
   {
   path:'trending',component:TrendingComponent,
   children: [
@@ -25,7 +22,7 @@ const routes: Routes = [
       component: VideoTrendingComponent
     }
   ]
-  },
+  }
 ];
 
 @NgModule({
