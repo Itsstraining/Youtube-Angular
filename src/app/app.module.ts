@@ -21,7 +21,6 @@ import {LibraryloginComponent} from './components/library/librarylogin/librarylo
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
@@ -37,6 +36,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { AuthenticationService } from './services/authentication.service';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SubcriptionsloginComponent } from './components/subcriptions/subcriptionslogin/subcriptionslogin.component';
 import { HistoryComponent } from './components/history/history.component';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -63,8 +63,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule,
+    
     //Material
+    MatTabsModule,
     MatTooltipModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
@@ -82,7 +83,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSelectModule,
     MatListModule,
     MatCardModule,
-    MatGridListModule,
+    MatButtonToggleModule
   ],
 
   providers: [],

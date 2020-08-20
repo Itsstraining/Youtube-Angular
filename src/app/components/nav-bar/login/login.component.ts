@@ -9,7 +9,7 @@ import {
   FormBuilder
 } from '@angular/forms'
 import { MatDialogRef } from '@angular/material/dialog';
-import { auth } from 'firebase';
+import { auth } from 'firebase/app';
 
 @Component({
   selector: 'app-login',
@@ -25,7 +25,8 @@ export class LoginComponent implements OnInit {
     public authService: AuthenticationService,
     private afAuth: AngularFireAuth,
     private fb: FormBuilder,
-    public dialogRef: MatDialogRef<LoginComponent>) {
+    public dialogRef: MatDialogRef<LoginComponent>
+    ) {
 
   }
 
@@ -37,10 +38,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  onSubmit(){
-
-  }
-
+  
   // closeDialog(){
   //   this.dialogRef.close();
   // }
@@ -52,5 +50,12 @@ export class LoginComponent implements OnInit {
   //       this.dialogRef.close();
   //   })
   // }
+
+
+    onSubmit(value) {
+      this.authService.loginWithEmailAndPassWord(value);
+    }
+  
+ 
 
 }

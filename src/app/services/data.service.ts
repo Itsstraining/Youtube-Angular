@@ -10,202 +10,261 @@ export class DataService {
   }
   listOfVideo:Array<Video> = [
     {
-      id: "string",
-      name: "string",
-      author: "string",
-      url: "string",
-      pictureURL:"string",
+      id: "1",
+      name: "THƯƠNG THẦM | RICKY STAR - KHOA | MV OFFICIAL ",
+      author: "KHOA OFFICIAL",
+      url: "https://www.youtube.com/watch?v=wHK9bHf_nEY",
+      avatarurl: 'https://yt3.ggpht.com/a/AATXAJyxUpodO4N2Hb1QylUig0lhZqgideaoUMPnDISIxA=s88-c-k-c0xffffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/wHK9bHf_nEY/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCyWRw7cS9RzTHej9_jJZdBwXdl8w",
       view: 1,
       like: 1,
       dislike: 1,
-      details: "string"
+      details: "14 tháng trước "
+    },
+   
+    {
+      id: "2",
+      name: "Chuyện Bên Lề 76: Anh Em Đi Dayton Đá Giải ",
+      author: "Tyler Ngô - Mê Xe Hơn Mấy Cô",
+      url: "https://www.youtube.com/watch?v=1rnmr3SjmIE",
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gg18zd2--TrIwyjcCh5vmZP1Qq5mVrIhLrCJw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/1rnmr3SjmIE/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLATlma8Hluo3CEOPQHUaHMKNkWLCw",
+      view: 1,
+      like: 1,
+      dislike: 1,
+      details: "1 tiếng trước "
     },
     {
-      id: "string",
-      name: "string",
-      author: "string",
-      url: "string",
-      pictureURL:"string",
+      id: "3",
+      name: "TRUNG TALON | SÁT THỦ KHÉT TIẾNG THẦY GIÁO BA ",
+      author: "Ba Rọi Béo",
+      url: "https://www.youtube.com/watch?v=5Ere_38nZbY",
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/5Ere_38nZbY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAxG9m7lI2keD0WqjbR2o9lK6oKiA",
       view: 1,
       like: 1,
       dislike: 1,
-      details: "string"
+      details: "2 tiếng trước "
     },
     {
-      id: "string",
-      name: "string",
-      author: "string",
-      url: "string",
-      pictureURL:"string",
+      id: "4",
+      name: "3 ĐIỀU ĐỨC DẠY BẢO [REP B RAY] - CHOI ",
+      author: "LOCOBoiz Official",
+      url: "https://www.youtube.com/watch?v=wHK9bHf_nEY",
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gg3nq-bDujEhOHvAk8m6yqeVcbodhtzymr4Yw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/cmKvNPlRH6U/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCHncy7pqB99vhO9nOqmeDXPz5yEg",
       view: 1,
       like: 1,
       dislike: 1,
-      details: "string"
-    }
+      details: "2 năm trước "
+    },
+    {
+      id: "5",
+      name: "QUAN HỆ RỘNG - BÌNH GOLD OFFICIAL MP3 ",
+      author: "Bình gold",
+      url: "https://www.youtube.com/watch?v=goQUV0jW8b4",
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gir3Gk8iElChTeygkniVjA82AzmuvIBENa5rA=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/goQUV0jW8b4/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAxrolSXT7umKaajPTKEh_PjXDpkg",
+      view: 1,
+      like: 1,
+      dislike: 1,
+      details: "2 năm trước "
+    },
+    {
+      id: '6',
+      name: 'TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương Và Cô Học Trò May Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời',
+      author: 'Tuổi trẻ chưa trải sự đời',
+      url: 'https://www.youtube.com/watch?v=Bn0RfBPavFg&t=17s',
+      avatarurl: 'https://yt3.ggpht.com/a/AATXAJy24ii2sCAjheSqMC9tjtXNevfCSv1irCzRQ5MW=s88-c-k-c0xffffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/Bn0RfBPavFg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAtdgLi5TWitanQwko40Z6_XQMICg",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '1 năm trước'
+    },
+    
+    {
+      id: '7',
+      name: 'Hành Trình Phiền Những Người Bạn Tập 12: Ghé Nhà Anh Vinh Review Sương Sương Chiếc Range Rover ',
+      author: 'Tyler Ngô - Mê Xe Hơn Mấy Cô',
+      url: 'https://www.youtube.com/watch?v=tuT_YvD27pU',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gg18zd2--TrIwyjcCh5vmZP1Qq5mVrIhLrCJw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/tuT_YvD27pU/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCePXzRRrydOl2l-NhMYa2wCSW3Ug",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '294.375 lượt xem'
+    },
+
+    {
+      id: '8',
+      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',
+      author: 'Sena',
+      url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GgUuzrsCY5op6hjiKg2VNxMvoPT8uJGcxSuVw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/NqQjnEKsw_o/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLByTaF1thE5pNvfrz_FzJwz2gKnIg",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '181 N lượt xem'
+    },
+
+    {
+      id: '9',
+      name: 'TEST NHẠC PIPO NGHE EO ÉO | LÊ BẢO ',
+      author: 'Lê Bảo Official',
+      url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjvpLWoM2X3rPvy0uIYG6WhI2oe-jGpuEsaaA=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/NLb1sDiNQSI/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD5lF-k06EZdxma3-v19HICn3DFJA",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '10 N lượt xem'
+    },
+    {
+      id: '10',
+      name: 'BỐ GIÀ REMIX | CON TRAI CHÚ, ẢNH NGON LẮM! | TRẤN THÀNH FT. TRÚC NHÂN ',
+      author: 'TRẤN THÀNH TOWN',
+      url: 'https://www.youtube.com/watch?v=NLb1sDiNQSI',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GigxX33RGLAWAa6TlxZdxTE_-yBwdxjMm35Gg=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/BNOrbeXMbrQ/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB7uVzxGvOnOZAuEbEbGsQjsaTUNQ",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '4.057.993 lượt xem lượt xem'
+    },
+    {
+      id: '11',
+      name: '(Talkshow) Ra mắt mẫu áo Mixigaming mới siêu chất, Mixigaming reaction Xạ Thủ Đua Tài ',
+      author: 'MixiGaming',
+      url: 'https://www.youtube.com/watch?v=w5lbpH5S-wA',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjjSkfEtGkyqFF79Y5aSoY1H8DAV0CunbWFkw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/w5lbpH5S-wA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAY85P5g6UA0Ywq9yMKgVHxJjw6Cw",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '36.981 lượt xem'
+    },
+    {
+      id: '12',
+      name: 'TRUNG RIVEN | PERFECT ',
+      author: 'Ba rọi béo',
+      url: 'https://www.youtube.com/watch?v=2ccpqCeeJSI',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/2ccpqCeeJSI/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAl2JRBQErbdO6HnQHPcwx7lqT8Cg",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '181 N lượt xem'
+    },
+    {
+      id: '13',
+      name: 'THẦY BA QUẨY CỰC NHIỆT VỚI FALL GUYS ',
+      author: 'Ba Rọi Béo',
+      url: 'youtube.com/watch?v=VY0dPdBU7Ks',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/VY0dPdBU7Ks/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBckCdtQHW9ACuhu26pwW4JPq1Paw",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '99 N lượt xem'
+    },
+    {
+      id: '14',
+      name: 'LÁI XE CỰC KHÉT | LÊ BẢO Official ',
+      author: 'LÊ BẢO Official',
+      url: 'https://www.youtube.com/watch?v=mMROn2S2QGM',
+      avatarurl: 'https://yt3.ggpht.com/a/AATXAJwdh00dBAqYha5S6wpXNw9RAkaw9VWK7HcSgMt2=s88-c-k-c0xffffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/mMROn2S2QGM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB5CrXzi1um88eHv45ZWfgYAuuUmg",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '181 N lượt xem'
+    },
+    {
+      id: '15',
+      name: 'Cập nhật tình hình dịch COVID-19 ngày 19/8: Việt Nam có 100 ca âm tính từ 1-3 lần với SARS-CoV-2  ',
+      author: 'Alo News',
+      url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
+      avatarurl: 'https://yt3.ggpht.com/a/AATXAJzXjfN-RytRbMJFCXYtSTfFKCugrLXHE82Dzvw5=s88-c-k-c0xffffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/1nypVbesGD4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCPp_n5e-5JSnEDy6yUMsPK6tyDGg",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '49.417 lượt xem'
+    },
+    {
+      id: '16',
+      name: 'TTCTSD.12 - Anh Em Faptv Tổ Chức Sinh Nhật Bất Ngờ Cho Anh Long Đẹp Trai ',
+      author: 'Tuổi Trẻ Chưa Trải Sự Đời',
+      url: 'https://www.youtube.com/watch?v=7CT9YzOvMqQ',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GhEkImPnKaDkN15nJ66wM5JktBwi_jxvN5SkQ=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/7CT9YzOvMqQ/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCHd5FdT-3iwTRFnLHlVA0K3HRbaA",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '181 N lượt xem'
+    },
+
+    {
+      id: '17',
+      name: 'Modified Cars & Supercars Leaving a Car Show! - C63s CRASH, 800HP Supra, Aventador SVJ, Skyline,...  6.404.148 lượt xem ',
+      author: 'DutchMotorsport',
+      url: 'https://www.youtube.com/watch?v=z5dTorypxaQ',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gi0sRf67XWdvQb73L_-B0Fn3j2QGWAI5nMl8Q=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/z5dTorypxaQ/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAuRO28-UXKT_7fjEOm6H9dbRa8Dw",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '6.404.148 lượt xem'
+    },
+
+    {
+      id: '18',
+      name: 'BLVCKVINES 56:  How to trốn trả bài :) ',
+      author: 'Blvck vines Official',
+      url: 'https://www.youtube.com/watch?v=GsWI8PckfOw',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14Ghke5PfJqd3mp1Ik6qHuLAH4_jPOru4eR5C5g=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/GsWI8PckfOw/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAfhkseDRh1PgOUqkMlLqvjw6KW8A",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '181 N lượt xem'
+    },
+
+    {
+      id: '19',
+      name: 'LAMBORGHINI Huracan EVO Spyder *LOUD* POV Test Drive by AutoTopNL ',
+      author: 'AutoTopNL',
+      url: 'https://www.youtube.com/watch?v=wt5O8CzQ3DA',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GimXwHtULABnGJSrSnuyUebN1HR0Gja_ig9Iw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/ILm3d00W9KI/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBX0OGcxVi9RcJUX5464StOrEaJMQ",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '3.989.198 lượt xem'
+    },
+
+    {
+      id: '20',
+      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',
+      author: 'Sena',
+      url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
+      avatarurl: 'https://yt3.ggpht.com/a-/AOh14GgUuzrsCY5op6hjiKg2VNxMvoPT8uJGcxSuVw=s68-c-k-c0x00ffffff-no-rj-mo',
+      pictureURL:"https://i.ytimg.com/vi/NqQjnEKsw_o/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLByTaF1thE5pNvfrz_FzJwz2gKnIg",
+      view: 6,
+      like: 0,
+      dislike: 0,
+      details: '181 N lượt xem'
+    },
+  
+  
+
+  
+  
   ]
 
 
-  // dataBase: Array<Video> = [{
-  //   id: '1',
-  //   name: 'Justin Bieber - Changes (Nature Visual)',
-  //   author: 'Justin Bieber',
-  //   url: '',
-  //   view: 7,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Production Company: OBB Pictures'
-  // },
 
-  // {
-  //   id: '2',
-  //   name: 'TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương Và Cô Học Trò May Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời',
-  //   author: 'Tuổi trẻ chưa trải sự đời',
-  //   url: '',
-  //   view: 6,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Huỳnh Phương lần đầu thể hiện đẳng cấp Yoga 15 năm của mình, khiến Sĩ Thanh kinh ngạc!'
-  // },
-  // {
-  //   id: '3',
-  //   name: 'TRUNG YONE | TÚ ƠI! HÃY ĐỂ ANH BA CHO TÚ THẤY BEST YONE của  Ba Rọi Béo',
-  //   author: 'Ba rọi béo',
-  //   url: '',
-  //   view: 5,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Chúc mấy đứa có 1 buổi stream nhiều kiến thức hữu ích và xả nhiều stress sau 1 ngày mệt mỏi'
-  // },
-
-  // {
-  //   id: '4',
-  //   name: 'Chuyện Bên Lề 75: Anh Bradley Ở Cali Qua Thăm Anh Đức',
-  //   author: 'Tyler Ngô - Mê Xe Hơn Mấy Cô',
-  //   url: '',
-  //   view: 4,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Chiều thứ 7 mấy anh em tập trung ăn uống nhẹ nhàng như mọi lần'
-  // },
-
-  // {
-  //   id: '5',
-  //   name: ' Tin tức Covid-19 mới nhất | Tình hình dịch corona hôm nay 19/8 | Dịch covid hôm nay tại Việt Nam của TIN TỨC 24H ONLINE',
-  //   author: 'TIN TỨC 24H ONLINE',
-  //   url: '',
-  //   view: 3.992,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Theo công điện, hiện thành phố Hà Nội đã có tổng số 35 ca mắc COVID-19, trong đó có 11 ca mắc ngoài cộng đồng và 2 ca mắc thứ phát, có ca không có triệu chứng khi phát hiện đã qua 14 ngày'
-  // },
-  // {
-  //   id: '6',
-  //   name: ' MixiVLOG#17: Nhà mới, cuộc sống mới của gia đình Độ Mixi',
-  //   author: 'MixiGaming',
-  //   url: '',
-  //   view: 3.635,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: ' Chúc các bạn xem stream vui vẻ'
-  // },
-  // {
-  //   id: '7',
-  //   name: ' MixiVLOG#17: Nhà mới, cuộc sống mới của gia đình Độ MixiDẫn BÌNH GOLD đi "Lái Máy Bay" & GIVEAWAY Độc  Nhất cho Fan nhaTO ở BAR LỚN NHẤT TP. Vinh',
-  //   author: 'nhaTO Official',
-  //   url: '',
-  //   view: 3.362,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: ' Chúc các bạn xem  vui vẻ'
-  // },
-  // {
-  //   id: '8',
-  //   name: ' MISSING YOU - PHƯƠNG LY x TINLE (Official MV)',
-  //   author: 'Phuong Ly Official',
-  //   url: '',
-  //   view: 9999992,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Dễ thương nhất trên đời'
-  // },
-
-  // {
-  //   id: '9',
-  //   name: 'NHISM PHÁ ĐẢO FALL GUYS VÀ TÂM SỰ VỀ CÂU CHUYỆN ĐƯỢC BỐ MẸ NHẶT VỀ NUÔI Ở BÃI RÁC',
-  //   author: ' NHISM FALL GUYS',
-  //   url: '',
-  //   view: 92,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'nhims and các bạn'
-  // },
-
-  // {
-  //   id: '10',
-  //   name: '3 ĐIỀU ĐỨC DẠY BẢO [REP B RAY] - CHOI ',
-  //   author: '  LOCOBoiz Official',
-  //   url: '',
-  //   view: 1,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'locoboiz on the mic'
-  // },
-
-  // {
-  //   id: '11',
-  //   name: 'CHUBBY REACTION GIÁO ÁN TRỐN VỢ REVIEW GÁI CỦA SENA ',
-  //   author: '  Sena',
-  //   url: '',
-  //   view: 1,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Vào lớp với thầy hiệu trưởng:'
-  // },
-
-  // {
-  //   id: '12',
-  //   name: 'THẦY BA KHUYÊN MỌI NGƯỜI KHÔNG NÊN XEM...HẠI MẮT LẮM ',
-  //   author: '   Ba Rọi Béo',
-  //   url: '',
-  //   view: 65,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Chúc mấy đứa có 1 buổi stream nhiều kiến thức hữu ích và xả nhiều stress sau 1 ngày mệt mỏi:'
-  // },
-
-  // {
-  //   id: '13',
-  //   name: 'BabyRed Livestream part 4 Lớp học',
-  //   author: '   BabyRed',
-  //   url: '',
-  //   view: 9,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'Đến với lớp giang hồ trực tuyến nào'
-  // },
-
-  // {
-  //   id: '14',
-  //   name: 'Nasus.exe',
-  //   author: ' Mako ',
-  //   url: '',
-  //   view: 23,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'How 2 Nasus: Q Like, share và subscribe cho mình nhé ^^',
-  // },
-
-  // {
-  //   id: '15',
-  //   name: 'QUAN HỆ RỘNG - BÌNH GOLD OFFICIAL MP3',
-  //   author: ' Mako ',
-  //   url: '',
-  //   view: 23,
-  //   like: 0,
-  //   dislike: 0,
-  //   details: 'How 2 Nasus: Q Like, share và subscribe cho mình nhé ^^',
-  // },
-
-  // ];
   constructor() { }
 }

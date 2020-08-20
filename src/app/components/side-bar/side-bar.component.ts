@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./side-bar.component.scss']
 })
 export class SideBarComponent implements OnInit {
-  
+
   opened: boolean;
 
   constructor(private route: Router) { }
@@ -20,20 +20,22 @@ export class SideBarComponent implements OnInit {
     {
       icon: 'local_fire_department',
       desc: '',
-      path: '/user'
+      path: '/trending'
     },
     {
       icon: 'subscriptions',
       desc: '',
-      path: '/user'
+      path: '/subcriptions'
     }
   ];
+
+  // tslint:disable-next-line:typedef
   ngOnInit() {
   }
 
+  // tslint:disable-next-line:typedef
   router(router: string) {
     this.route.navigateByUrl(router);
   }
 
-  
 }
