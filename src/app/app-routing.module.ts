@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LibraryComponent } from './components/library/library.component';
 import { TrendingComponent } from './components/trending/trending.component';
 import {VideoTrendingComponent} from './components/trending/video-trending/video-trending.component';
+import {VideoHomeComponent} from './components/home/video-home/video-home.component'
 import { HomeComponent } from './components/home/home.component';
 import {LibraryloginComponent} from './components/library/librarylogin/librarylogin.component';
 import { SubcriptionsComponent } from './components/subcriptions/subcriptions.component';
@@ -13,6 +14,9 @@ import {HistoryComponent} from './components/history/history.component';
 const routes: Routes = [
   {
     path: 'home', component: HomeComponent,
+  },
+  {
+    path: 'video-home', component:VideoHomeComponent,
   },
   {
     path: 'library' , component: LibraryComponent,
