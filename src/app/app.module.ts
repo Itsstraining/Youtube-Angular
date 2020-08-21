@@ -40,6 +40,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SubcriptionsloginComponent } from './components/subcriptions/subcriptionslogin/subcriptionslogin.component';
 import { HistoryComponent } from './components/history/history.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 @NgModule({
   declarations: [
@@ -83,7 +85,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSelectModule,
     MatListModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatGridListModule,
+    MatCheckboxModule,
   ],
 
   providers: [],

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../../../app/services/data.service';
 
 @Component({
   templateUrl: './library.component.html',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LibraryComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:DataService) { }
 
   ngOnInit(): void {
   }

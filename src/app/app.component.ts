@@ -8,6 +8,7 @@ import { Component,Input } from '@angular/core';
 export class AppComponent {
   title = 'youtubeClone';
   @Input() opened: boolean;
+  
 
 
   changeState(event) {

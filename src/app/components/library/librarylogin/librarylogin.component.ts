@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DataService } from '../../../../app/services/data.service';
+
 @Component({
   selector: 'app-librarylogin',
   templateUrl: './librarylogin.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibraryloginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:DataService) { }
 
   ngOnInit(): void {
   }
