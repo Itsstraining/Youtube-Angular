@@ -11,6 +11,7 @@ export class DataService {
   listOfVideo:Array<Video> = [
     {
       id: "1",
+      type:"Music",
       name: "THƯƠNG THẦM | RICKY STAR - KHOA | MV OFFICIAL ",
       author: "KHOA OFFICIAL",
       url: "https://www.youtube.com/watch?v=wHK9bHf_nEY",
@@ -24,6 +25,7 @@ export class DataService {
    
     {
       id: "2",
+      type:"News",
       name: "Chuyện Bên Lề 76: Anh Em Đi Dayton Đá Giải ",
       author: "Tyler Ngô - Mê Xe Hơn Mấy Cô",
       url: "https://www.youtube.com/watch?v=1rnmr3SjmIE",
@@ -36,6 +38,7 @@ export class DataService {
     },
     {
       id: "3",
+      type:"Game",
       name: "TRUNG TALON | SÁT THỦ KHÉT TIẾNG THẦY GIÁO BA ",
       author: "Ba Rọi Béo",
       url: "https://www.youtube.com/watch?v=5Ere_38nZbY",
@@ -48,6 +51,7 @@ export class DataService {
     },
     {
       id: "4",
+      type:"Music",
       name: "3 ĐIỀU ĐỨC DẠY BẢO [REP B RAY] - CHOI ",
       author: "LOCOBoiz Official",
       url: "https://www.youtube.com/watch?v=wHK9bHf_nEY",
@@ -60,6 +64,7 @@ export class DataService {
     },
     {
       id: "5",
+      type:"Music",
       name: "QUAN HỆ RỘNG - BÌNH GOLD OFFICIAL MP3 ",
       author: "Bình gold",
       url: "https://www.youtube.com/watch?v=goQUV0jW8b4",
@@ -72,6 +77,7 @@ export class DataService {
     },
     {
       id: '6',
+      type:"Movies",
       name: 'TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương Và Cô Học Trò May Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời',
       author: 'Tuổi trẻ chưa trải sự đời',
       url: 'https://www.youtube.com/watch?v=Bn0RfBPavFg&t=17s',
@@ -85,6 +91,7 @@ export class DataService {
     
     {
       id: '7',
+      type:"News",
       name: 'Hành Trình Phiền Những Người Bạn Tập 12: Ghé Nhà Anh Vinh Review Sương Sương Chiếc Range Rover ',
       author: 'Tyler Ngô - Mê Xe Hơn Mấy Cô',
       url: 'https://www.youtube.com/watch?v=tuT_YvD27pU',
@@ -98,6 +105,7 @@ export class DataService {
 
     {
       id: '8',
+      type:"Game",
       name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',
       author: 'Sena',
       url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
@@ -111,6 +119,7 @@ export class DataService {
 
     {
       id: '9',
+      type:"Music",
       name: 'TEST NHẠC PIPO NGHE EO ÉO | LÊ BẢO ',
       author: 'Lê Bảo Official',
       url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
@@ -123,6 +132,7 @@ export class DataService {
     },
     {
       id: '10',
+      type:"Music",
       name: 'BỐ GIÀ REMIX | CON TRAI CHÚ, ẢNH NGON LẮM! | TRẤN THÀNH FT. TRÚC NHÂN ',
       author: 'TRẤN THÀNH TOWN',
       url: 'https://www.youtube.com/watch?v=NLb1sDiNQSI',
@@ -135,6 +145,7 @@ export class DataService {
     },
     {
       id: '11',
+      type:"News",
       name: '(Talkshow) Ra mắt mẫu áo Mixigaming mới siêu chất, Mixigaming reaction Xạ Thủ Đua Tài ',
       author: 'MixiGaming',
       url: 'https://www.youtube.com/watch?v=w5lbpH5S-wA',
@@ -147,6 +158,7 @@ export class DataService {
     },
     {
       id: '12',
+      type:"Game",
       name: 'TRUNG RIVEN | PERFECT ',
       author: 'Ba rọi béo',
       url: 'https://www.youtube.com/watch?v=2ccpqCeeJSI',
@@ -159,6 +171,7 @@ export class DataService {
     },
     {
       id: '13',
+      type:"Game",
       name: 'THẦY BA QUẨY CỰC NHIỆT VỚI FALL GUYS ',
       author: 'Ba Rọi Béo',
       url: 'youtube.com/watch?v=VY0dPdBU7Ks',
@@ -171,6 +184,7 @@ export class DataService {
     },
     {
       id: '14',
+      type:"Movies",
       name: 'LÁI XE CỰC KHÉT | LÊ BẢO Official ',
       author: 'LÊ BẢO Official',
       url: 'https://www.youtube.com/watch?v=mMROn2S2QGM',
@@ -183,6 +197,7 @@ export class DataService {
     },
     {
       id: '15',
+      type:"News",
       name: 'Cập nhật tình hình dịch COVID-19 ngày 19/8: Việt Nam có 100 ca âm tính từ 1-3 lần với SARS-CoV-2  ',
       author: 'Alo News',
       url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
@@ -195,6 +210,7 @@ export class DataService {
     },
     {
       id: '16',
+      type:"News",
       name: 'TTCTSD.12 - Anh Em Faptv Tổ Chức Sinh Nhật Bất Ngờ Cho Anh Long Đẹp Trai ',
       author: 'Tuổi Trẻ Chưa Trải Sự Đời',
       url: 'https://www.youtube.com/watch?v=7CT9YzOvMqQ',
@@ -208,6 +224,7 @@ export class DataService {
 
     {
       id: '17',
+      type:"News",
       name: 'Modified Cars & Supercars Leaving a Car Show! - C63s CRASH, 800HP Supra, Aventador SVJ, Skyline,...  6.404.148 lượt xem ',
       author: 'DutchMotorsport',
       url: 'https://www.youtube.com/watch?v=z5dTorypxaQ',
@@ -221,6 +238,7 @@ export class DataService {
 
     {
       id: '18',
+      type:"Movies",
       name: 'BLVCKVINES 56:  How to trốn trả bài :) ',
       author: 'Blvck vines Official',
       url: 'https://www.youtube.com/watch?v=GsWI8PckfOw',
@@ -234,6 +252,7 @@ export class DataService {
 
     {
       id: '19',
+      type:"News",
       name: 'LAMBORGHINI Huracan EVO Spyder *LOUD* POV Test Drive by AutoTopNL ',
       author: 'AutoTopNL',
       url: 'https://www.youtube.com/watch?v=wt5O8CzQ3DA',
@@ -247,6 +266,7 @@ export class DataService {
 
     {
       id: '20',
+      type:"Game",
       name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',
       author: 'Sena',
       url: 'https://www.youtube.com/watch?v=NqQjnEKsw_o',
