@@ -1,11 +1,10 @@
-<mat-toolbar color="primary" class="container">
-
+<mat-toolbar color="primary" class="mat-elevation-z6">
     <button mat-icon-button class="example-icon" (click)="changeEvent()">
         <mat-icon>menu</mat-icon>
     </button>
 
+    <app-logo></app-logo>
 
-    <span>YoutubeClone</span>
     <span class="example-spacer"></span>
 
 
@@ -62,20 +61,19 @@
         </button>
     </mat-menu>
 
-
-
-    <img *ngIf="authService.user != null " src="{{authService.user.photoURL}}"
+    <img [matMenuTriggerFor]="menu0" *ngIf="authService.user != null " src="{{authService.user.photoURL}}"
         style="width: 50px; height: 50x; border-radius: 50%;">
     <h5 *ngIf="authService.user != null" style="font-size: medium;"> {{authService.user.displayName}} </h5>
-
 
     <div *ngIf="authService.user == null">
         <button mat-button (click)="openDialog()">Login</button>
     </div>
-    <div *ngIf="authService.user != null">
 
-        <button mat-button (click)="authService.signout()">
-            Log out
+    <mat-menu #menu0="matMenu">
+        <button *ngIf="authService.user != null" mat-menu-item>
+            <a mat-button (click)="authService.signout()">
+                Log out
+            </a>
         </button>
-    </div>
+    </mat-menu>
 </mat-toolbar>
