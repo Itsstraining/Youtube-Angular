@@ -34,7 +34,6 @@ export class NavBarComponent implements OnInit {
   @Output() changeState = new EventEmitter<boolean>();
   isLogin: boolean;
   opened: boolean;
-  isLoginFB: boolean;
   userDetails = null;
   user: Array<any> = [];
 

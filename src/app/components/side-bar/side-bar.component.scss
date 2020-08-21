@@ -1,8 +1,16 @@
 .container {
-    width: 100% !important;
-    height: 80% !important;
+    // width: 100% !important;
+    // height: 80% !important;
     color: #191919; 
-    position: fixed;
+
   }
   
+  .example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+  }
   
