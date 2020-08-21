@@ -1,11 +1,20 @@
 <div class="categories">
     <div class="categoriesMenu">
-        <app-trending-categories *ngFor="let item of dbButton" [dbButton]=" item">
+        <app-trending-categories *ngFor="let item of dbButton" [dbButton]="item">
         </app-trending-categories>
     </div>
 
 </div>
 
+<div *ngFor="let item of video.listOfVideo">
+
+    <p> {{item.type}}</p>
+    <img [src]='item.pictureURL'>
+
+
+
+
+</div>
 <div>
     <router-outlet></router-outlet>
 </div>

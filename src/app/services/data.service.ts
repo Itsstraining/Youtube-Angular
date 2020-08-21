@@ -13,7 +13,8 @@ export class DataService {
   listOfVideo:Array<Video> = [
     {
       id: "1",
-      name: "THƯƠNG THẦM | RICKY STAR - KHOA | MV OFFICIAL (419) ",
+      type:"Music",
+      name: "THƯƠNG THẦM | RICKY STAR - KHOA | MV OFFICIAL ",
       author: "KHOA OFFICIAL",
       url: "https://www.youtube.com/embed/wHK9bHf_nEY",
       avatarurl: 'https://yt3.ggpht.com/a/AATXAJyxUpodO4N2Hb1QylUig0lhZqgideaoUMPnDISIxA=s88-c-k-c0xffffffff-no-rj-mo',
@@ -26,7 +27,8 @@ export class DataService {
    
     {
       id: "2",
-      name: "Chuyện Bên Lề 76: Anh Em Đi Dayton Đá Giải Giao Hữu(chủ yếu là ăn nhậu) ",
+      type:"News",
+      name: "Chuyện Bên Lề 76: Anh Em Đi Dayton Đá Giải ",
       author: "Tyler Ngô - Mê Xe Hơn Mấy Cô",
       url: "https://www.youtube.com/embed/1rnmr3SjmIE",
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gg18zd2--TrIwyjcCh5vmZP1Qq5mVrIhLrCJw=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -38,7 +40,8 @@ export class DataService {
     },
     {
       id: "3",
-      name: "TRUNG TALON | SÁT THỦ KHÉT TIẾNG ĐÓ LÀ THẦY GIÁO BA ",
+      type:"Game",
+      name: "TRUNG TALON | SÁT THỦ KHÉT TIẾNG THẦY GIÁO BA ",
       author: "Ba Rọi Béo",
       url: "https://www.youtube.com/embed/5Ere_38nZbY",
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -50,7 +53,8 @@ export class DataService {
     },
     {
       id: "4",
-      name: "3 ĐIỀU ĐỨC DẠY BẢO [REP B RAY] - CHOI (LOCOBOIZINDAHOUSE) ",
+      type:"Music",
+      name: "3 ĐIỀU ĐỨC DẠY BẢO [REP B RAY] - CHOI ",
       author: "LOCOBoiz Official",
       url: "https://www.youtube.com/embed/cmKvNPlRH6U",
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gg3nq-bDujEhOHvAk8m6yqeVcbodhtzymr4Yw=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -62,7 +66,8 @@ export class DataService {
     },
     {
       id: "5",
-      name: "QUAN HỆ RỘNG (Bình gold's album)- BÌNH GOLD OFFICIAL MP3  ",
+      type:"Music",
+      name: "QUAN HỆ RỘNG - BÌNH GOLD OFFICIAL MP3 ",
       author: "Bình gold",
       url: "https://www.youtube.com/embed/goQUV0jW8b4",
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gir3Gk8iElChTeygkniVjA82AzmuvIBENa5rA=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -74,6 +79,7 @@ export class DataService {
     },
     {
       id: '6',
+      type:"Movies",
       name: 'TTCTSD.33 - Thầy Giáo Yoga Huỳnh Phương Và Cô Học Trò May Mắn Sĩ Thanh của Tuổi Trẻ Chưa Trải Sự Đời',
       author: 'Tuổi trẻ chưa trải sự đời',
       url: 'https://www.youtube.com/embed/Bn0RfBPavFg',
@@ -87,6 +93,7 @@ export class DataService {
     
     {
       id: '7',
+      type:"News",
       name: 'Hành Trình Phiền Những Người Bạn Tập 12: Ghé Nhà Anh Vinh Review Sương Sương Chiếc Range Rover ',
       author: 'Tyler Ngô - Mê Xe Hơn Mấy Cô',
       url: 'https://www.youtube.com/embed/tuT_YvD27pU',
@@ -100,7 +107,8 @@ export class DataService {
 
     {
       id: '8',
-      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu , con cưng của thầy hiệu trưởng ',
+      type:"Game",
+      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',
       author: 'Sena',
       url: 'https://www.youtube.com/embed/NqQjnEKsw_o',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GgUuzrsCY5op6hjiKg2VNxMvoPT8uJGcxSuVw=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -113,7 +121,8 @@ export class DataService {
 
     {
       id: '9',
-      name: 'TEST NHẠC PIPO NGHE MÈO MÉO MEO MÈO MEO MEO MEO MEO | LÊ BẢO ',
+      type:"Music",
+      name: 'TEST NHẠC PIPO NGHE EO ÉO | LÊ BẢO ',
       author: 'Lê Bảo Official',
       url: 'https://www.youtube.com/embed/NLb1sDiNQSI',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjvpLWoM2X3rPvy0uIYG6WhI2oe-jGpuEsaaA=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -125,6 +134,7 @@ export class DataService {
     },
     {
       id: '10',
+      type:"Music",
       name: 'BỐ GIÀ REMIX | CON TRAI CHÚ, ẢNH NGON LẮM! | TRẤN THÀNH FT. TRÚC NHÂN ',
       author: 'TRẤN THÀNH TOWN',
       url: 'https://www.youtube.com/embed/BNOrbeXMbrQ',
@@ -137,6 +147,7 @@ export class DataService {
     },
     {
       id: '11',
+      type:"News",
       name: '(Talkshow) Ra mắt mẫu áo Mixigaming mới siêu chất, Mixigaming reaction Xạ Thủ Đua Tài ',
       author: 'MixiGaming',
       url: 'https://www.youtube.com/embed/w5lbpH5S-wA',
@@ -149,7 +160,8 @@ export class DataService {
     },
     {
       id: '12',
-      name: 'TRUNG RIVEN SỰ HOÀN HẢO ĐẾN TỪ NHỮNG NHỮNG CHI TIẾT NHỎ NHẶT  ',
+      type:"Game",
+      name: 'TRUNG RIVEN | PERFECT ',
       author: 'Ba rọi béo',
       url: 'https://www.youtube.com/embed/2ccpqCeeJSI',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -161,7 +173,8 @@ export class DataService {
     },
     {
       id: '13',
-      name: 'THẦY BA QUẨY CỰC NHIỆT CÙNG ANH EM SBTC VỚI FALL GUYS ',
+      type:"Game",
+      name: 'THẦY BA QUẨY CỰC NHIỆT VỚI FALL GUYS ',
       author: 'Ba Rọi Béo',
       url: 'https://www.youtube.com/embed/VY0dPdBU7Ks',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GjDM4J7f0vZ5xOGYthXKCyd7MYK1Aylls_GIg=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -173,7 +186,8 @@ export class DataService {
     },
     {
       id: '14',
-      name: 'Cách lái xe khét nhất từ trước đến giờ của Lê Bảo | LÊ BẢO Official ',
+      type:"Movies",
+      name: 'LÁI XE CỰC KHÉT | LÊ BẢO Official ',
       author: 'LÊ BẢO Official',
       url: 'https://www.youtube.com/embed/zD1ti54YGbU',
       avatarurl: 'https://yt3.ggpht.com/a/AATXAJwdh00dBAqYha5S6wpXNw9RAkaw9VWK7HcSgMt2=s88-c-k-c0xffffffff-no-rj-mo',
@@ -185,6 +199,7 @@ export class DataService {
     },
     {
       id: '15',
+      type:"News",
       name: 'Cập nhật tình hình dịch COVID-19 ngày 19/8: Việt Nam có 100 ca âm tính từ 1-3 lần với SARS-CoV-2  ',
       author: 'Alo News',
       url: 'https://www.youtube.com/embed/T4T6aQh00Uo',
@@ -197,6 +212,7 @@ export class DataService {
     },
     {
       id: '16',
+      type:"News",
       name: 'TTCTSD.12 - Anh Em Faptv Tổ Chức Sinh Nhật Bất Ngờ Cho Anh Long Đẹp Trai ',
       author: 'Tuổi Trẻ Chưa Trải Sự Đời',
       url: 'https://www.youtube.com/embed/7CT9YzOvMqQ',
@@ -210,7 +226,8 @@ export class DataService {
 
     {
       id: '17',
-      name: 'Modified Cars & Supercars Leaving a Car Show! - C63s CRASH, 800HP Supra, Aventador SVJ, Skyline,... ',
+      type:"News",
+      name: 'Modified Cars & Supercars Leaving a Car Show! - C63s CRASH, 800HP Supra, Aventador SVJ, Skyline,...  6.404.148 lượt xem ',
       author: 'DutchMotorsport',
       url: 'https://www.youtube.com/embed/z5dTorypxaQ',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14Gi0sRf67XWdvQb73L_-B0Fn3j2QGWAI5nMl8Q=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -223,7 +240,8 @@ export class DataService {
 
     {
       id: '18',
-      name: 'BLVCKVINES 56:    How to trốn trả bài một cách có kĩ thuật nhất        :) ',
+      type:"Movies",
+      name: 'BLVCKVINES 56:  How to trốn trả bài :) ',
       author: 'Blvck vines Official',
       url: 'https://www.youtube.com/embed/GsWI8PckfOw',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14Ghke5PfJqd3mp1Ik6qHuLAH4_jPOru4eR5C5g=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -236,7 +254,8 @@ export class DataService {
 
     {
       id: '19',
-      name: 'LAMBORGHINI Huracan EVO Spyder *LOUD* POV Test Drive by AutoTopNL.  ',
+      type:"News",
+      name: 'LAMBORGHINI Huracan EVO Spyder *LOUD* POV Test Drive by AutoTopNL ',
       author: 'AutoTopNL',
       url: 'https://www.youtube.com/embed/wt5O8CzQ3DA',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GimXwHtULABnGJSrSnuyUebN1HR0Gja_ig9Iw=s68-c-k-c0x00ffffff-no-rj-mo',
@@ -249,7 +268,8 @@ export class DataService {
 
     {
       id: '20',
-      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu , con cưng của thầy hiệu trưởng ',
+      type:"Game",
+      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',r
       author: 'Sena',
       url: 'https://www.youtube.com/embed/NqQjnEKsw_o',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GgUuzrsCY5op6hjiKg2VNxMvoPT8uJGcxSuVw=s68-c-k-c0x00ffffff-no-rj-mo',
