@@ -6,15 +6,26 @@
 
 </div>
 
-<div *ngFor="let item of video.listOfVideo">
+<div class="video-trending">
 
-    <p> {{item.type}}</p>
-    <img [src]='item.pictureURL'>
+    <mat-card class="card" *ngFor="let item of video.listOfVideo">
 
-
-
+        <iframe width="50%" height="200" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.url)"></iframe>
+        <mat-card-content>
+            <p>{{item.name}}</p>
+            <br>
+            <p>{{item.author}}</p>
+            <br>
+            <p>{{item.details}} </p>
+        </mat-card-content>
+    </mat-card>
 
 </div>
+
+
+
+
+
 <div>
     <router-outlet></router-outlet>
 </div>
