@@ -12,23 +12,13 @@ import { Video } from 'src/app/models/video.model';
 })
 export class VideoTrendingComponent implements OnInit {
 
-// @Input() DataService
+  @Input() dbButton:any=null; listOfVideo:Video;
+  isType: boolean;
+  
 
- 
-
-// video$:Observable<any>;
-
-  constructor( private route: ActivatedRoute,
+  constructor( private route: ActivatedRoute,public dataService:DataService,
     private router: Router  ) { }
 
   ngOnInit(): void {}
-  //   const videoTitle= this.route.snapshot.paramMap.get('title');
-  //   this.video$ = this.DataService.getVideo(videoTitle);
-  // }
-  // gotoVideo(video: Video) {
-  //   const videoTitle = video ? video.title : null;
-  //   // Pass along the hero id if available
-  //   // so that the HeroList component can select that item.
-  //   this.router.navigate(['/video', { title: videoTitle }]);
-  // }
 }
+

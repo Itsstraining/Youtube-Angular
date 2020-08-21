@@ -41,7 +41,8 @@ import { SubcriptionsloginComponent } from './components/subcriptions/subcriptio
 import { HistoryComponent } from './components/history/history.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import { LogoComponent } from './components/nav-bar/logo/logo.component';
+import { IconComponent } from './components/nav-bar/login/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     LibraryloginComponent,
     SubcriptionsloginComponent,
     HistoryComponent,
+    LogoComponent,
+    IconComponent,
   ],
   imports: [
     BrowserModule,

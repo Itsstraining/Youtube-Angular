@@ -80,15 +80,18 @@ export class AuthenticationService {
   }
 
     public async createWithEmailAndPassWord(userFormValue){
-      const credetial = await this.auth.createUserWithEmailAndPassword(userFormValue.email, userFormValue.password);
-      console.log(credetial.user);
-      return this.updateUserData(credetial.user)
+      try{
+      await this.auth.createUserWithEmailAndPassword(userFormValue.email, userFormValue.password)
+      // console.log(credetial.user);
+      // return this.updateUserData(credetial.user)
       .then(() => {
         this.dialogRef.closeAll();
         this.user != null;
       })
-      .catch((err) =>{
-      });
+    }
+      catch(err){
+        console.log(err);
+      };
     }
 
     onSubmit(value) {
