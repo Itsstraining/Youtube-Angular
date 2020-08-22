@@ -292,10 +292,6 @@ export class DataService {
       dislike: 0,
       details: '181.989 N lượt xem'
     },
-  
-
-  
-  
   ]
   getFile(){
     return of(this.listOfVideo);

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { MatDialogRef, MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar'
 import * as firebase from 'firebase';
 
 import { User } from '../models/user.model'
@@ -20,6 +21,8 @@ export class AuthenticationService {
     private db: AngularFirestore,
     public dialogRef: MatDialog,
   ) { }
+
+
   public async login() {
     try {
 
