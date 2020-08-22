@@ -39,6 +39,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SubcriptionsloginComponent } from './components/subcriptions/subcriptionslogin/subcriptionslogin.component';
 import { HistoryComponent } from './components/history/history.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { LogoComponent } from './components/nav-bar/logo/logo.component';
+import { IconComponent } from './components/nav-bar/login/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +61,8 @@ import { HistoryComponent } from './components/history/history.component';
     LibraryloginComponent,
     SubcriptionsloginComponent,
     HistoryComponent,
+    LogoComponent,
+    IconComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,7 +88,9 @@ import { HistoryComponent } from './components/history/history.component';
     MatSelectModule,
     MatListModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatGridListModule,
+    MatCheckboxModule,
   ],
 
   providers: [],

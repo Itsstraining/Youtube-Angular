@@ -1,9 +1,12 @@
-<div class='container'>
-  <mat-list-item *ngFor="let d of data">
-    <button mat-icon-button (click)="router(d.path)">
-      <mat-icon>{{ d.icon }}</mat-icon>
-      {{ d.desc }}
-    </button>
-  </mat-list-item>
-</div>
-
+<!-- <div class='container'> -->
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav-content>
+    <mat-list-item *ngFor="let d of data">
+      <button mat-icon-button (click)="router(d.path)">
+        <mat-icon>{{ d.icon }}</mat-icon>
+        {{ d.desc }}
+      </button>
+    </mat-list-item>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!-- </div> -->

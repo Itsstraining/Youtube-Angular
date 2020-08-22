@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../../../../app/services/data.service';
 @Component({
   selector: 'app-subcriptionslogin',
   templateUrl: './subcriptionslogin.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubcriptionsloginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:DataService) { }
 
   ngOnInit(): void {
   }

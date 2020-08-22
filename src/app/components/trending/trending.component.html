@@ -1,10 +1,30 @@
 <div class="categories">
     <div class="categoriesMenu">
-        <app-trending-categories *ngFor="let item of dbButton" [dbButton]=" item">
+        <app-trending-categories *ngFor="let item of dbButton" [dbButton]="item">
         </app-trending-categories>
     </div>
 
 </div>
+
+<div class="video-trending">
+
+    <mat-card class="card" *ngFor="let item of video.listOfVideo">
+
+        <iframe width="50%" height="200" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.url)"></iframe>
+        <mat-card-content>
+            <p>{{item.name}}</p>
+            <br>
+            <p>{{item.author}}</p>
+            <br>
+            <p>{{item.details}} </p>
+        </mat-card-content>
+    </mat-card>
+
+</div>
+
+
+
+
 
 <div>
     <router-outlet></router-outlet>

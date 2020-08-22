@@ -42,6 +42,9 @@ const routes: Routes = [
       component: VideoTrendingComponent
     }
   ]
+  },
+  {
+    path: '**', component: HomeComponent
   }
 ];
 
