@@ -281,6 +281,7 @@ export class DataService {
     },
     {
       id: '21',
+      type:"Game",
       name: 'TRUNG REACTION | TOP 7 Streamer VN xinh đẹp tài năng nhưng lận đận tình duyên: ViruSs, Misthy...',
       author: 'Ba rọi béo',
       url: 'https://www.youtube.com/embed/FCH7NPyB3xg',
