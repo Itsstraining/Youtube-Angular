@@ -7,7 +7,6 @@
 </div>
 
 <div class="video-trending">
-
     <mat-card class="row" *ngFor="let item of video.listOfVideo">
 
         <iframe class="column left" width="50%" height="200" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.url)"></iframe>
@@ -21,7 +20,6 @@
             <p style="font-size:small">{{item.details}} </p>
         </mat-card-content>
     </mat-card>
-
 </div>
 <div>
     <router-outlet></router-outlet>

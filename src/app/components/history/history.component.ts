@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../../app/services/data.service';
-
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
 export interface Tile {
@@ -23,7 +23,8 @@ export class HistoryComponent implements OnInit {
   
 
   
-  constructor(public dataService:DataService) { }
+  constructor(public video:DataService,public sanitizer: DomSanitizer) { }
+  
 
 
   ngOnInit(): void {
