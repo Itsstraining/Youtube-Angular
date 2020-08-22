@@ -3,7 +3,7 @@ import {DataService} from '../../services/data.service'
 import { Video } from 'src/app/models/video.model';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators'; 
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   templateUrl: './trending.component.html',
@@ -37,7 +37,7 @@ export class TrendingComponent implements OnInit {
   
   
 
-  constructor(public video:DataService) { }
+  constructor(public video:DataService,public sanitizer: DomSanitizer) { }
 
 
   ngOnInit(): void {
