@@ -8,15 +8,17 @@
 
 <div class="video-trending">
 
-    <mat-card class="card" *ngFor="let item of video.listOfVideo">
+    <mat-card class="row" *ngFor="let item of video.listOfVideo">
 
-        <iframe width="50%" height="200" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.url)"></iframe>
-        <mat-card-content>
-            <p>{{item.name}}</p>
+        <iframe class="column left" width="50%" height="200" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.url)"></iframe>
+        <mat-card-content class="column right">
+            <p style="font-size: large;">{{item.name}}</p>
             <br>
-            <p>{{item.author}}</p>
+            <p style="font-size: medium;">
+                <img [src]="item.avatarurl" style="border-radius:50%; border-color:black"> {{item.author}}
+            </p>
             <br>
-            <p>{{item.details}} </p>
+            <p style="font-size:small">{{item.details}} </p>
         </mat-card-content>
     </mat-card>
 
