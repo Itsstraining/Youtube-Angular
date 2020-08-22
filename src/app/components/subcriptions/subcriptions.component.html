@@ -1,4 +1,4 @@
-<div style="text-align:center; margin-top: 200px">
+<div style="text-align:center; margin-top: 200px" *ngIf=" authService.user == null">
     <mat-icon style="font-size:800%; width:200px;height: 100px;">
         subscriptions
     </mat-icon>
@@ -12,3 +12,5 @@
        top:0px;margin-left:5px">Đăng Nhập</span>
     </button>
 </div>
+
+<app-subcriptionslogin *ngIf="authService.user != null"></app-subcriptionslogin>

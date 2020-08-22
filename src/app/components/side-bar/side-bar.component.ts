@@ -27,6 +27,16 @@ export class SideBarComponent implements OnInit {
       icon: 'subscriptions',
       desc: 'Subscriptions',
       path: '/subcriptions'
+    },
+    {
+      icon: 'library_add',
+      desc: 'Library',
+      path: '/library'
+    },
+    {
+      icon: 'history',
+      desc: 'History',
+      path: '/history'
     }
   ];
 

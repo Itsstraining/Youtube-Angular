@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from '../nav-bar/login/login.component';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   templateUrl: './subcriptions.component.html',
@@ -12,7 +13,7 @@ import { LoginComponent } from '../nav-bar/login/login.component';
 export class SubcriptionsComponent implements OnInit {
 
   constructor(public dataService:DataService,private dialog:MatDialog,
-    public router: Router) { }
+    public router: Router, public authService: AuthenticationService) { }
 
   ngOnInit(): void {
   }
