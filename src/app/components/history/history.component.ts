@@ -17,7 +17,7 @@ export interface Tile {
 })
 export class HistoryComponent implements OnInit {
   tiles: Tile[] = [
-    {text: 'Two', cols: 1, rows: 10, color: 'lightgreen'},
+    {text: 'Two', cols: 1, rows: 2 , color: 'lightgreen'},
   
   ];
   

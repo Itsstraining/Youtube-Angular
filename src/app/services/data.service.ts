@@ -269,7 +269,7 @@ export class DataService {
     {
       id: '20',
       type:"Game",
-      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',r
+      name: 'Sena Vlog - Build dàn PC xịn xò gần 100 triệu ',
       author: 'Sena',
       url: 'https://www.youtube.com/embed/NqQjnEKsw_o',
       avatarurl: 'https://yt3.ggpht.com/a-/AOh14GgUuzrsCY5op6hjiKg2VNxMvoPT8uJGcxSuVw=s68-c-k-c0x00ffffff-no-rj-mo',
