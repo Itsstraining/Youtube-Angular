@@ -16,5 +16,28 @@
 </div>
 
 <div>
+    <div class="homepage">
+        <mat-card class="card" *ngFor="let video of dataService.listOfVideo">
+            <img mat-card-image [src]='video.pictureURL' alt="Photo of JB">
+            <mat-card-header>
+                <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;" [src]="video.avatarurl"></div>
+                <mat-card-title> <a style="font-size:small; text-decoration: none; " [href]="video.url" dir="auto">{{video.name}}</a>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-subtitle>
+                <!-- <a [href]="video.url" dir="auto" dir="auto">{{video.name}}</a> -->
+                <div id="metadata-line" class="style-scope ytd-video-meta-block">
+
+                    <mat-card-title> <a style="font-size: small; text-decoration: none; " [href]="video.url" dir="auto">{{video.author}}</a>
+                    </mat-card-title>
+
+                    <mat-card-title> <a style="font-size: small; text-decoration: none; " [href]="video.url" dir="auto">{{video.details}}</a>
+                    </mat-card-title>
+                </div>
+
+            </mat-card-subtitle>
+
+        </mat-card>
+    </div>
 
 </div>
