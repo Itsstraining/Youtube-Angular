@@ -20,3 +20,63 @@
     margin-left: 5%;
     text-decoration: none;
 }
+
+.describe {
+    padding: 30px;
+    height: 120px;
+    opacity: 0.95;
+}
+
+.sub-Describe {
+    position: relative;
+    padding: 20px;
+    text-decoration: none;
+    opacity: 0.92;
+}
+
+.showmor {
+    padding: 20px;
+    background-color: rgb(107, 15, 15);
+    opacity: 0.86;
+}
+
+section {
+    color: white;
+    grid-area: section;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 1fr 1fr;
+}
+
+.comments {
+    padding: 10px;
+    position: relative;
+    top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-name {
+    position: relative;
+    bottom: 3em;
+    font-size: 0.86em;
+}
+
+.comments-comment {
+    position: relative;
+    bottom: 2em;
+    line-height: 1.3em;
+}
+
+.card {
+    column-count: 2;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+}
+
+.video-trending {
+    padding-left: 5%;
+}

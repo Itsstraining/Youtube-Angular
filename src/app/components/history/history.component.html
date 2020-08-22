@@ -1,49 +1,53 @@
 <mat-grid-list cols="2" rowHeight="1:2">
     <mat-grid-tile>
-        <div style="display: flex; justify-content: center; align-items: flex-start; width: 100%; height: 100%; margin-top:20%">
+        <div style="display: flex; justify-content: center; align-items: flex-start; width: 100%; height: 100%; margin-top:20%;">
             <p style="font-size: larger;">Lịch sử xem</p>
-        </div>
-        <div>
-            <div class="homepage">
-                <mat-card class="card" *ngFor="let video of dataService.listOfVideo">
-                    <img mat-card-image [src]='video.pictureURL' alt="Photo of JB">
-                    <mat-card-header>
-                        <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;" [src]="video.avatarurl"></div>
-                        <mat-card-title> <a style="font-size:small; text-decoration: none; " [href]="video.url" dir="auto">{{video.name}}</a>
-                        </mat-card-title>
-                    </mat-card-header>
-                    <mat-card-subtitle>
-                        <!-- <a [href]="video.url" dir="auto" dir="auto">{{video.name}}</a> -->
-                        <div id="metadata-line" class="style-scope ytd-video-meta-block">
 
-                            <mat-card-title> <a style="font-size: small; text-decoration: none; " [href]="video.url" dir="auto">{{video.author}}</a>
-                            </mat-card-title>
+            <p style="font-size: medium;">Loại lịch sử</p>
 
-                            <mat-card-title> <a style="font-size: small; text-decoration: none; " [href]="video.url" dir="auto">{{video.details}}</a>
-                            </mat-card-title>
-                        </div>
 
-                    </mat-card-subtitle>
+            <mat-checkbox color="warn">Lịch sử xem</mat-checkbox>
+            <hr width="200px">
+            <mat-checkbox color="warn">Lịch sử tìm kiếm</mat-checkbox>
+            <hr width="200px">
+            <mat-checkbox color="warn">Lịch sử bình luận</mat-checkbox>
 
-                </mat-card>
-            </div>
+
+
 
         </div>
+
     </mat-grid-tile>
-    <mat-grid-tile>
-        <div style="display: flex; justify-content: flex-start; flex-direction: column; align-items: center; width: 100%; height: 100%; margin-top:30%;margin-left:10%">
-            <div>
-                <p style="font-size: medium;">Loại lịch sử</p>
-            </div>
-            <div>
-                <mat-checkbox color="warn">Lịch sử xem</mat-checkbox>
-                <hr width="200px">
-                <mat-checkbox color="warn">Lịch sử tìm kiếm</mat-checkbox>
-                <hr width="200px">
-                <mat-checkbox color="warn">Lịch sử bình luận</mat-checkbox>
 
-
-            </div>
-        </div>
-    </mat-grid-tile>
 </mat-grid-list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <div class="history-video">
+
+        <mat-card class="card" *ngFor="let item of video.listOfVideo">
+
+            <iframe width="100%" height="150" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.url)"></iframe>
+            <mat-card-content>
+                <p>{{item.name}}</p>
+                <br>
+                <p>{{item.author}}</p>
+                <br>
+                <p>{{item.details}} </p>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+
+</div>
