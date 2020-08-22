@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { DataService } from '../../../app/services/data.service';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from '../nav-bar/login/login.component';
+import { AuthenticationService } from '../../services/authentication.service'
 @Component({
   templateUrl: './library.component.html',
   styleUrls: ['./library.component.scss']
@@ -10,7 +11,8 @@ import { LoginComponent } from '../nav-bar/login/login.component';
 export class LibraryComponent implements OnInit {
 
   constructor(public dataService:DataService,private dialog:MatDialog,
-    public router: Router) { }
+    public router: Router,
+    public authService: AuthenticationService) { }
 
   ngOnInit(): void {
   }
