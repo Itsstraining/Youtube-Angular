@@ -25,7 +25,7 @@ export class SideBarComponent implements OnInit {
     },
     {
       icon: 'subscriptions',
-      desc: 'subscriptions',
+      desc: 'Subscriptions',
       path: '/subcriptions'
     }
   ];
