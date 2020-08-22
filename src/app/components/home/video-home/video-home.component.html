@@ -3,7 +3,6 @@
     <mat-card class="card" *ngFor="let video of dataService.listOfVideo; index as i">
         <!-- <ul>
             <li> -->
-                {{i + 1}}
                
                 <!-- <video width="100%" height="300" id="mediaPlayer" #mediaPlayer preload="none">
                     <source type="video/youtube" src="{{video.url}}"/>
@@ -13,6 +12,7 @@
                 {{i + 1}}
                 <p>{{video.name}}</p>
                 <p>{{video.author}}</p>
+                <p>{{video.details}}</p>
                 <!-- <div mat-card-avatar class=""><img id="img" alt="" width="48" style="border-radius: 50%;" [src]="this.video.avatarurl">
                 </div>
                 <mat-card-title> <a style="font-size:small; text-decoration: none; " [href]="video.url" dir="auto">{{video.name}}</a>
