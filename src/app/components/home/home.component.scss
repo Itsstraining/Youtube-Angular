@@ -1,12 +1,13 @@
 .card {
     max-width: 400px;
-  }
-  
-  .example-header-image {
+}
+
+.example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
-  }
-  .homepage {
+}
+
+.homepage {
     display: grid;
     grid-template-columns: auto auto auto;
     font-size: large;
@@ -17,5 +18,3 @@
     margin-left: 5%;
     text-decoration: none;
 }
-  
-  
