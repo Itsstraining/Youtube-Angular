@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
+
 @Component({
   templateUrl: './trending.component.html',
   styleUrls: ['./trending.component.scss']

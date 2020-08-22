@@ -73,10 +73,6 @@ section {
     line-height: 1.3em;
 }
 
-.card {
-    column-count: 2;
-}
-
 .video-info {
     display: flex;
     align-items: center;
@@ -84,4 +80,23 @@ section {
 
 .video-trending {
     padding-left: 5%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
